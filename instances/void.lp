@@ -5,4 +5,4 @@ nvars(0).
 maxdepth(0).
 maxterms(0).
 depth(0, 0).
-attractor_label(0).
+nattractor_points(1).

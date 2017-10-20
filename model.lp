@@ -54,6 +54,10 @@ literal_subsumes(X, T2, T1, Y) :- not pos(X,Y,T1), not neg(X, Y, T1), not neg(X,
 term_subsumes(X, T2, T1) :- #count{Y : literal_subsumes(X, T2, T1, Y)} = N, nvars(N), term(X, T1), term(X, T2).
 :- term_subsumes(X, T2, T1), T2 != T1, variable(X).
 
+% Attractor points sums
+attractor_label(1..A) :- nattractor_points(A).
+{attractor_period(X, K) : is_attractor(X), depth(K)} = A :- nattractor_points(A).
+
 % attractor_label is a functional relation
 #count{N : attractor_label(X, N) : attractor_label(N)} = 1 :- is_attractor(X).
 % To avoid symmetrical models, force labeling to be canonically ordered:
