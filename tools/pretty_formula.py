@@ -5,7 +5,8 @@ def transform(model):
     values = [(x[:x.find('(')],  [int(z) for z in x[x.find('(')+1:-1].split(",")]) for x in str(model).strip().split(" ")]
     nvars = int(dict(values)['nvars'][0])
     maxterms = int(dict(values)['maxterms'][0])
-    table = [ [ [""]*nvars for _ in range(maxterms)] for _ in range(nvars)]
+    nterms = {x[0]:x[1] for (l,x) in values if l == "nterms"}
+    table = [ [ [""]*nvars for _ in range(nterms[v])] if nterms[v] > 0 else "F" for v in range(nvars)]
     for k, v in values:
         if k == "pos":
             a,b,c = v

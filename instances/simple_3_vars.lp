@@ -3,6 +3,7 @@
 nvars(3).
 maxdepth(5).
 maxterms(1).
+nattractor_points(3).
 
 interpret(0,0,1).
 interpret(0,1,0).
@@ -30,7 +31,6 @@ interpret(7,1,1).
 interpret(7,2,1).
 
 
-attractor_label(1..3). 
 {attractor_period(X, 1) : is_attractor(X)} = 1.
 {attractor_period(X, 2) : is_attractor(X)} = 2.
 {attractor_period(X, K) : is_attractor(X), depth(K)} = 3.

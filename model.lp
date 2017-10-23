@@ -33,19 +33,12 @@ interpret_term(I, X, T, 1) :- #count{Y : pos(X, Y, T), get_var(I, Y, 0)} = 0,
 % t-DNF semantics
 interpret(I, X, 1) :- interpret_term(I, X, T, 1), term(X, T), state(I).
 interpret(I, X, 0) :- #count{K : interpret_term(I, X, K, 0)} = T, nterms(X, T), state(I).
-% DNF redundancy restrictions:
-% Empty clause possible only if nothing else present
+
+% DNF redundancy restrictions for speedup:
+% 1) Empty clause possible only if nothing else present
 :- #count{Y : pos(X, Y, T) ; Y : neg(X, Y, T) } = 0, variable(X), term(X, T), nterms(X, K), K > 1.
 
-%literal_gte(X, T1, T2, Y) :- pos(X, Y, T1), pos(X, Y, T2), term(X, T1), term(X, T2).
-%literal_gte(X, T1, T2, Y) :- neg(X, Y, T1), neg(X, Y, T2), term(X, T1), term(X, T2).
-%literal_gte(X, T1, T2, Y) :- neg(X, Y, T1), pos(X, Y, T2), term(X, T1), term(X, T2).
-%literal_gte(X, T1, T2, Y) :- pos(X, Y, T1), not neg(X, Y, T2), not pos(X, Y, T2), term(X, T1), term(X, T2).
-%literal_gte(X, T1, T2, Y) :- neg(X, Y, T1), not neg(X, Y, T2), not pos(X, Y, T2), term(X, T1), term(X, T2).
-%literal_gte(X, T1, T2, Y) :- not pos(X,Y,T1), not neg(X, Y, T1), not neg(X, Y, T2), not pos(X, Y, T2), term(X, T1), term(X, T2), variable(Y).
-%term_gte(X, T1, T2) :- #count{Y : literal_gte(X, T1, T2, Y)} = N, nvars(N), term(X, T1), term(X, T2).
-%:- term_gte(X, T1, T2), T1 > T2, variable(X).
-
+% 2) Remove rendundancy by requiring that no term in a DNF subsumes another:
 literal_subsumes(X, T2, T1, Y) :- pos(X, Y, T1), pos(X, Y, T2), term(X, T1), term(X, T2).
 literal_subsumes(X, T2, T1, Y) :- neg(X, Y, T1), neg(X, Y, T2), term(X, T1), term(X, T2).
 literal_subsumes(X, T2, T1, Y) :- pos(X, Y, T1), not neg(X, Y, T2), not pos(X, Y, T2), term(X, T1), term(X, T2).
@@ -54,9 +47,27 @@ literal_subsumes(X, T2, T1, Y) :- not pos(X,Y,T1), not neg(X, Y, T1), not neg(X,
 term_subsumes(X, T2, T1) :- #count{Y : literal_subsumes(X, T2, T1, Y)} = N, nvars(N), term(X, T1), term(X, T2).
 :- term_subsumes(X, T2, T1), T2 != T1, variable(X).
 
+% 3) Remove redundancy by lexicographically ordering terms in each DNF:
+term_gte(X, T1, T2, K) :- nvars(K), term(X, T1), term(X, T2).
+term_gte(X, T1, T2, Y) :- pos(X, Y, T1), pos(X, Y, T2), term(X, T1), term(X, T2), term_gte(X, T1, T2, Y+1).
+term_gte(X, T1, T2, Y) :- neg(X, Y, T1), neg(X, Y, T2), term(X, T1), term(X, T2), term_gte(X, T1, T2, Y+1).
+term_gte(X, T1, T2, Y) :- neg(X, Y, T1), pos(X, Y, T2), term(X, T1), term(X, T2), term_gte(X, T1, T2, Y+1).
+term_gte(X, T1, T2, Y) :- pos(X, Y, T1), not neg(X, Y, T2), not pos(X, Y, T2), term(X, T1), term(X, T2), term_gte(X, T1, T2, Y+1).
+term_gte(X, T1, T2, Y) :- neg(X, Y, T1), not neg(X, Y, T2), not pos(X, Y, T2), term(X, T1), term(X, T2), term_gte(X, T1, T2, Y+1).
+term_gte(X, T1, T2, Y) :- not pos(X,Y,T1), not neg(X, Y, T1), not neg(X, Y, T2), not pos(X, Y, T2), term(X, T1), term(X, T2), variable(Y), term_gte(X, T1, T2, Y+1).
+term_gte(X, T1, T2) :- term_gte(X, T1, T2, 0).
+:- term_gte(X, T1, T2), T1 > T2, variable(X).
+
+
 % Attractor points sums
-attractor_label(1..A) :- nattractor_points(A).
-{attractor_period(X, K) : is_attractor(X), depth(K)} = A :- nattractor_points(A).
+attractor_label(0..A-1) :- nattractor_points(A).
+
+% attractor_period/2 is a functional relation.
+#count{K : attractor_period(I, K) : depth(K)} = 1 :- is_attractor(I).
+%:- attractor_period(I, _), not is_attractor(I).
+
+% There is a given number of attractor points
+#count{I : is_attractor(I) : state(I)} = A :- nattractor_points(A).
 
 % attractor_label is a functional relation
 #count{N : attractor_label(X, N) : attractor_label(N)} = 1 :- is_attractor(X).
@@ -70,7 +81,7 @@ attractor_period(X, K) :- attractor_label(X, E), #count{F : reachable(E, F)} = K
 
 % There is always an attractor.
 % This condition may make the instance unsatisfiable if t is set too low.
-{is_attractor(X) : state(X)} > 0.
+#count{X : is_attractor(X) : state(X)} > 0.
 
 % Attractor state inter-reachability is an equivalence relation.
 % It is not necessary, but somewhat speeds up grounding.
@@ -79,11 +90,11 @@ reachable(E, E) :- attractor_label(E).
 reachable(E, F) :- reachable(E, G), reachable(G, F), attractor_label(E), attractor_label(F), attractor_label(G).
 
 % Minimize total number of literals
-#minimize{ 1@2, X,Y,T : pos(X,Y,T) }.
-#minimize{ 1@2, X,Y,T : neg(X,Y,T) }.
+%#minimize{ 1@2, X,Y,T : pos(X,Y,T) }.
+%#minimize{ 1@2, X,Y,T : neg(X,Y,T) }.
 
 % Prefer the most compact DNFs
-#minimize{ T@1, X : nterms(X, T), variable(X)}.
+%#minimize{ T@1, X : nterms(X, T), variable(X)}.
 
 #show pos/3.
 #show neg/3.
@@ -91,3 +102,9 @@ reachable(E, F) :- reachable(E, G), reachable(G, F), attractor_label(E), attract
 #show attractor_period/2.
 #show nvars/1.
 #show maxterms/1.
+%#show depth/2.
+%#show attractor_label/2.
+%#show is_attractor/1.
+%#show reachable/2.
+%#show interpret/3.
+%#show interpret_term/4.

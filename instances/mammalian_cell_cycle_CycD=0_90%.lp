@@ -3,7 +3,7 @@ nvars(9).
 maxterms(4).
 maxdepth(9).
 
-attractor_label(1).
+nattractor_points(1).
 
 % Hints - can be commented:
 %nterms(0, 2). nterms(1, 2). nterms(2, 1). nterms(3, 4). nterms(4, 3). nterms(5, 1). nterms(6, 3). nterms(7, 4). nterms(8, 1).
