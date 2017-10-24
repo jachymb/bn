@@ -1,4 +1,4 @@
-#include "transitions/9.lp".
+#include "optimize.lp".
 nvars(9).
 maxterms(4).
 maxdepth(9).

@@ -10,7 +10,7 @@ def transform(model):
     for k, v in values:
         if k == "pos":
             a,b,c = v
-            table[a][c-1][b] = str(b)
+            table[a][c-1][b] = " " + str(b)
         elif k == "neg":
             a,b,c = v
             table[a][c-1][b] = "~" + str(b)

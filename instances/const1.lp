@@ -1,6 +1,5 @@
 % Learn constant true 
 % Note the difference in nterms/2 in the model in contrast to const0.lp
-#include "transitions/1.lp".
 
 nvars(1).
 maxdepth(1).

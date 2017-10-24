@@ -1,5 +1,4 @@
 % Learn identity function over 2 variables from constraints only (no data).
-#include "transitions/2.lp".
 
 nvars(2).
 maxdepth(1).
