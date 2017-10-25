@@ -16,30 +16,28 @@ attractor_label(157, 7). attractor_period(7, 7).
 reachable(1..7, 1..7).
 :- reachable(X, 0), X > 0.
 
-
-
-%interpret(0, 0, 0).
-%interpret(0, 1, 1).
-%interpret(0, 2, 1).
-%interpret(0, 3, 0).
-%interpret(0, 4, 0).
-%interpret(0, 5, 1).
-%interpret(0, 6, 0).
-%interpret(0, 7, 1).
-%interpret(0, 8, 1).
-%interpret(0, 9, 1).
-%transition(0, 934).
-%interpret(1, 0, 1).
-%interpret(1, 1, 0).
-%interpret(1, 2, 1).
-%interpret(1, 3, 0).
-%interpret(1, 4, 0).
-%interpret(1, 5, 0).
-%interpret(1, 6, 0).
-%interpret(1, 7, 1).
-%interpret(1, 8, 1).
-%interpret(1, 9, 1).
-%transition(1, 901).
+interpret(0, 0, 0).
+interpret(0, 1, 1).
+interpret(0, 2, 1).
+interpret(0, 3, 0).
+interpret(0, 4, 0).
+interpret(0, 5, 1).
+interpret(0, 6, 0).
+interpret(0, 7, 1).
+interpret(0, 8, 1).
+interpret(0, 9, 1).
+transition(0, 934).
+interpret(1, 0, 1).
+interpret(1, 1, 0).
+interpret(1, 2, 1).
+interpret(1, 3, 0).
+interpret(1, 4, 0).
+interpret(1, 5, 0).
+interpret(1, 6, 0).
+interpret(1, 7, 1).
+interpret(1, 8, 1).
+interpret(1, 9, 1).
+transition(1, 901).
 interpret(2, 0, 0).
 interpret(2, 1, 1).
 interpret(2, 2, 0).
@@ -84,17 +82,17 @@ interpret(5, 7, 1).
 interpret(5, 8, 1).
 interpret(5, 9, 1).
 transition(5, 925).
-%interpret(6, 0, 0).
-%interpret(6, 1, 1).
-%interpret(6, 2, 0).
-%interpret(6, 3, 0).
-%interpret(6, 4, 0).
-%interpret(6, 5, 1).
-%interpret(6, 6, 0).
-%interpret(6, 7, 1).
-%interpret(6, 8, 1).
-%interpret(6, 9, 1).
-%transition(6, 930).
+interpret(6, 0, 0).
+interpret(6, 1, 1).
+interpret(6, 2, 0).
+interpret(6, 3, 0).
+interpret(6, 4, 0).
+interpret(6, 5, 1).
+interpret(6, 6, 0).
+interpret(6, 7, 1).
+interpret(6, 8, 1).
+interpret(6, 9, 1).
+transition(6, 930).
 interpret(7, 0, 1).
 interpret(7, 1, 0).
 interpret(7, 2, 0).
@@ -106,28 +104,28 @@ interpret(7, 7, 1).
 interpret(7, 8, 1).
 interpret(7, 9, 1).
 transition(7, 897).
-%interpret(8, 0, 0).
-%interpret(8, 1, 0).
-%interpret(8, 2, 1).
-%interpret(8, 3, 0).
-%interpret(8, 4, 0).
-%interpret(8, 5, 0).
-%interpret(8, 6, 0).
-%interpret(8, 7, 1).
-%interpret(8, 8, 1).
-%interpret(8, 9, 1).
-%transition(8, 900).
-%interpret(9, 0, 1).
-%interpret(9, 1, 0).
-%interpret(9, 2, 1).
-%interpret(9, 3, 0).
-%interpret(9, 4, 0).
-%interpret(9, 5, 0).
-%interpret(9, 6, 0).
-%interpret(9, 7, 1).
-%interpret(9, 8, 1).
-%interpret(9, 9, 1).
-%transition(9, 901).
+interpret(8, 0, 0).
+interpret(8, 1, 0).
+interpret(8, 2, 1).
+interpret(8, 3, 0).
+interpret(8, 4, 0).
+interpret(8, 5, 0).
+interpret(8, 6, 0).
+interpret(8, 7, 1).
+interpret(8, 8, 1).
+interpret(8, 9, 1).
+transition(8, 900).
+interpret(9, 0, 1).
+interpret(9, 1, 0).
+interpret(9, 2, 1).
+interpret(9, 3, 0).
+interpret(9, 4, 0).
+interpret(9, 5, 0).
+interpret(9, 6, 0).
+interpret(9, 7, 1).
+interpret(9, 8, 1).
+interpret(9, 9, 1).
+transition(9, 901).
 interpret(10, 0, 0).
 interpret(10, 1, 0).
 interpret(10, 2, 0).
@@ -172,28 +170,28 @@ interpret(13, 7, 1).
 interpret(13, 8, 1).
 interpret(13, 9, 1).
 transition(13, 925).
-%interpret(14, 0, 0).
-%interpret(14, 1, 0).
-%interpret(14, 2, 0).
-%interpret(14, 3, 0).
-%interpret(14, 4, 0).
-%interpret(14, 5, 0).
-%interpret(14, 6, 0).
-%interpret(14, 7, 1).
-%interpret(14, 8, 1).
-%interpret(14, 9, 1).
-%transition(14, 896).
-%interpret(15, 0, 1).
-%interpret(15, 1, 0).
-%interpret(15, 2, 0).
-%interpret(15, 3, 0).
-%interpret(15, 4, 0).
-%interpret(15, 5, 0).
-%interpret(15, 6, 0).
-%interpret(15, 7, 1).
-%interpret(15, 8, 1).
-%interpret(15, 9, 1).
-%transition(15, 897).
+interpret(14, 0, 0).
+interpret(14, 1, 0).
+interpret(14, 2, 0).
+interpret(14, 3, 0).
+interpret(14, 4, 0).
+interpret(14, 5, 0).
+interpret(14, 6, 0).
+interpret(14, 7, 1).
+interpret(14, 8, 1).
+interpret(14, 9, 1).
+transition(14, 896).
+interpret(15, 0, 1).
+interpret(15, 1, 0).
+interpret(15, 2, 0).
+interpret(15, 3, 0).
+interpret(15, 4, 0).
+interpret(15, 5, 0).
+interpret(15, 6, 0).
+interpret(15, 7, 1).
+interpret(15, 8, 1).
+interpret(15, 9, 1).
+transition(15, 897).
 interpret(16, 0, 0).
 interpret(16, 1, 0).
 interpret(16, 2, 0).
@@ -359,17 +357,17 @@ interpret(30, 7, 0).
 interpret(30, 8, 1).
 interpret(30, 9, 1).
 transition(30, 768).
-%interpret(31, 0, 1).
-%interpret(31, 1, 0).
-%interpret(31, 2, 0).
-%interpret(31, 3, 0).
-%interpret(31, 4, 0).
-%interpret(31, 5, 0).
-%interpret(31, 6, 0).
-%interpret(31, 7, 0).
-%interpret(31, 8, 1).
-%interpret(31, 9, 1).
-%transition(31, 769).
+interpret(31, 0, 1).
+interpret(31, 1, 0).
+interpret(31, 2, 0).
+interpret(31, 3, 0).
+interpret(31, 4, 0).
+interpret(31, 5, 0).
+interpret(31, 6, 0).
+interpret(31, 7, 0).
+interpret(31, 8, 1).
+interpret(31, 9, 1).
+transition(31, 769).
 interpret(32, 0, 0).
 interpret(32, 1, 1).
 interpret(32, 2, 1).
@@ -601,17 +599,17 @@ interpret(52, 7, 1).
 interpret(52, 8, 1).
 interpret(52, 9, 1).
 transition(52, 958).
-%interpret(53, 0, 1).
-%interpret(53, 1, 0).
-%interpret(53, 2, 1).
-%interpret(53, 3, 1).
-%interpret(53, 4, 1).
-%interpret(53, 5, 0).
-%interpret(53, 6, 0).
-%interpret(53, 7, 1).
-%interpret(53, 8, 1).
-%interpret(53, 9, 1).
-%transition(53, 925).
+interpret(53, 0, 1).
+interpret(53, 1, 0).
+interpret(53, 2, 1).
+interpret(53, 3, 1).
+interpret(53, 4, 1).
+interpret(53, 5, 0).
+interpret(53, 6, 0).
+interpret(53, 7, 1).
+interpret(53, 8, 1).
+interpret(53, 9, 1).
+transition(53, 925).
 interpret(54, 0, 0).
 interpret(54, 1, 1).
 interpret(54, 2, 0).
@@ -634,17 +632,17 @@ interpret(55, 7, 1).
 interpret(55, 8, 1).
 interpret(55, 9, 1).
 transition(55, 897).
-%interpret(56, 0, 0).
-%interpret(56, 1, 1).
-%interpret(56, 2, 1).
-%interpret(56, 3, 0).
-%interpret(56, 4, 1).
-%interpret(56, 5, 0).
-%interpret(56, 6, 0).
-%interpret(56, 7, 1).
-%interpret(56, 8, 1).
-%interpret(56, 9, 1).
-%transition(56, 918).
+interpret(56, 0, 0).
+interpret(56, 1, 1).
+interpret(56, 2, 1).
+interpret(56, 3, 0).
+interpret(56, 4, 1).
+interpret(56, 5, 0).
+interpret(56, 6, 0).
+interpret(56, 7, 1).
+interpret(56, 8, 1).
+interpret(56, 9, 1).
+transition(56, 918).
 interpret(57, 0, 1).
 interpret(57, 1, 0).
 interpret(57, 2, 1).
@@ -678,17 +676,17 @@ interpret(59, 7, 1).
 interpret(59, 8, 1).
 interpret(59, 9, 1).
 transition(59, 897).
-%interpret(60, 0, 0).
-%interpret(60, 1, 1).
-%interpret(60, 2, 1).
-%interpret(60, 3, 1).
-%interpret(60, 4, 1).
-%interpret(60, 5, 0).
-%interpret(60, 6, 0).
-%interpret(60, 7, 1).
-%interpret(60, 8, 1).
-%interpret(60, 9, 1).
-%transition(60, 926).
+interpret(60, 0, 0).
+interpret(60, 1, 1).
+interpret(60, 2, 1).
+interpret(60, 3, 1).
+interpret(60, 4, 1).
+interpret(60, 5, 0).
+interpret(60, 6, 0).
+interpret(60, 7, 1).
+interpret(60, 8, 1).
+interpret(60, 9, 1).
+transition(60, 926).
 interpret(61, 0, 1).
 interpret(61, 1, 0).
 interpret(61, 2, 1).
@@ -733,17 +731,17 @@ interpret(64, 7, 1).
 interpret(64, 8, 1).
 interpret(64, 9, 0).
 transition(64, 422).
-%interpret(65, 0, 1).
-%interpret(65, 1, 0).
-%interpret(65, 2, 1).
-%interpret(65, 3, 0).
-%interpret(65, 4, 0).
-%interpret(65, 5, 0).
-%interpret(65, 6, 0).
-%interpret(65, 7, 1).
-%interpret(65, 8, 1).
-%interpret(65, 9, 0).
-%transition(65, 389).
+interpret(65, 0, 1).
+interpret(65, 1, 0).
+interpret(65, 2, 1).
+interpret(65, 3, 0).
+interpret(65, 4, 0).
+interpret(65, 5, 0).
+interpret(65, 6, 0).
+interpret(65, 7, 1).
+interpret(65, 8, 1).
+interpret(65, 9, 0).
+transition(65, 389).
 interpret(66, 0, 0).
 interpret(66, 1, 1).
 interpret(66, 2, 0).
@@ -766,17 +764,17 @@ interpret(67, 7, 1).
 interpret(67, 8, 1).
 interpret(67, 9, 0).
 transition(67, 385).
-%interpret(68, 0, 0).
-%interpret(68, 1, 1).
-%interpret(68, 2, 1).
-%interpret(68, 3, 1).
-%interpret(68, 4, 0).
-%interpret(68, 5, 1).
-%interpret(68, 6, 0).
-%interpret(68, 7, 1).
-%interpret(68, 8, 1).
-%interpret(68, 9, 0).
-%transition(68, 430).
+interpret(68, 0, 0).
+interpret(68, 1, 1).
+interpret(68, 2, 1).
+interpret(68, 3, 1).
+interpret(68, 4, 0).
+interpret(68, 5, 1).
+interpret(68, 6, 0).
+interpret(68, 7, 1).
+interpret(68, 8, 1).
+interpret(68, 9, 0).
+transition(68, 430).
 interpret(69, 0, 1).
 interpret(69, 1, 0).
 interpret(69, 2, 1).
@@ -920,17 +918,17 @@ interpret(81, 7, 1).
 interpret(81, 8, 1).
 interpret(81, 9, 0).
 transition(81, 385).
-%interpret(82, 0, 0).
-%interpret(82, 1, 0).
-%interpret(82, 2, 0).
-%interpret(82, 3, 0).
-%interpret(82, 4, 0).
-%interpret(82, 5, 0).
-%interpret(82, 6, 0).
-%interpret(82, 7, 1).
-%interpret(82, 8, 1).
-%interpret(82, 9, 0).
-%transition(82, 384).
+interpret(82, 0, 0).
+interpret(82, 1, 0).
+interpret(82, 2, 0).
+interpret(82, 3, 0).
+interpret(82, 4, 0).
+interpret(82, 5, 0).
+interpret(82, 6, 0).
+interpret(82, 7, 1).
+interpret(82, 8, 1).
+interpret(82, 9, 0).
+transition(82, 384).
 interpret(83, 0, 1).
 interpret(83, 1, 0).
 interpret(83, 2, 0).
@@ -964,17 +962,17 @@ interpret(85, 7, 1).
 interpret(85, 8, 1).
 interpret(85, 9, 0).
 transition(85, 393).
-%interpret(86, 0, 0).
-%interpret(86, 1, 0).
-%interpret(86, 2, 0).
-%interpret(86, 3, 0).
-%interpret(86, 4, 0).
-%interpret(86, 5, 0).
-%interpret(86, 6, 0).
-%interpret(86, 7, 1).
-%interpret(86, 8, 1).
-%interpret(86, 9, 0).
-%transition(86, 384).
+interpret(86, 0, 0).
+interpret(86, 1, 0).
+interpret(86, 2, 0).
+interpret(86, 3, 0).
+interpret(86, 4, 0).
+interpret(86, 5, 0).
+interpret(86, 6, 0).
+interpret(86, 7, 1).
+interpret(86, 8, 1).
+interpret(86, 9, 0).
+transition(86, 384).
 interpret(87, 0, 1).
 interpret(87, 1, 0).
 interpret(87, 2, 0).
@@ -986,17 +984,17 @@ interpret(87, 7, 1).
 interpret(87, 8, 1).
 interpret(87, 9, 0).
 transition(87, 385).
-%interpret(88, 0, 0).
-%interpret(88, 1, 0).
-%interpret(88, 2, 0).
-%interpret(88, 3, 0).
-%interpret(88, 4, 0).
-%interpret(88, 5, 0).
-%interpret(88, 6, 0).
-%interpret(88, 7, 1).
-%interpret(88, 8, 1).
-%interpret(88, 9, 0).
-%transition(88, 384).
+interpret(88, 0, 0).
+interpret(88, 1, 0).
+interpret(88, 2, 0).
+interpret(88, 3, 0).
+interpret(88, 4, 0).
+interpret(88, 5, 0).
+interpret(88, 6, 0).
+interpret(88, 7, 1).
+interpret(88, 8, 1).
+interpret(88, 9, 0).
+transition(88, 384).
 interpret(89, 0, 1).
 interpret(89, 1, 0).
 interpret(89, 2, 0).
@@ -1052,17 +1050,17 @@ interpret(93, 7, 1).
 interpret(93, 8, 1).
 interpret(93, 9, 0).
 transition(93, 393).
-%interpret(94, 0, 0).
-%interpret(94, 1, 0).
-%interpret(94, 2, 0).
-%interpret(94, 3, 0).
-%interpret(94, 4, 0).
-%interpret(94, 5, 0).
-%interpret(94, 6, 0).
-%interpret(94, 7, 1).
-%interpret(94, 8, 1).
-%interpret(94, 9, 0).
-%transition(94, 384).
+interpret(94, 0, 0).
+interpret(94, 1, 0).
+interpret(94, 2, 0).
+interpret(94, 3, 0).
+interpret(94, 4, 0).
+interpret(94, 5, 0).
+interpret(94, 6, 0).
+interpret(94, 7, 1).
+interpret(94, 8, 1).
+interpret(94, 9, 0).
+transition(94, 384).
 interpret(95, 0, 1).
 interpret(95, 1, 0).
 interpret(95, 2, 0).
@@ -1107,17 +1105,17 @@ interpret(98, 7, 1).
 interpret(98, 8, 1).
 interpret(98, 9, 0).
 transition(98, 418).
-%interpret(99, 0, 1).
-%interpret(99, 1, 0).
-%interpret(99, 2, 0).
-%interpret(99, 3, 0).
-%interpret(99, 4, 0).
-%interpret(99, 5, 0).
-%interpret(99, 6, 0).
-%interpret(99, 7, 1).
-%interpret(99, 8, 1).
-%interpret(99, 9, 0).
-%transition(99, 385).
+interpret(99, 0, 1).
+interpret(99, 1, 0).
+interpret(99, 2, 0).
+interpret(99, 3, 0).
+interpret(99, 4, 0).
+interpret(99, 5, 0).
+interpret(99, 6, 0).
+interpret(99, 7, 1).
+interpret(99, 8, 1).
+interpret(99, 9, 0).
+transition(99, 385).
 interpret(100, 0, 0).
 interpret(100, 1, 1).
 interpret(100, 2, 1).
@@ -1338,17 +1336,17 @@ interpret(119, 7, 1).
 interpret(119, 8, 1).
 interpret(119, 9, 0).
 transition(119, 385).
-%interpret(120, 0, 0).
-%interpret(120, 1, 1).
-%interpret(120, 2, 1).
-%interpret(120, 3, 0).
-%interpret(120, 4, 0).
-%interpret(120, 5, 0).
-%interpret(120, 6, 0).
-%interpret(120, 7, 1).
-%interpret(120, 8, 1).
-%interpret(120, 9, 0).
-%transition(120, 390).
+interpret(120, 0, 0).
+interpret(120, 1, 1).
+interpret(120, 2, 1).
+interpret(120, 3, 0).
+interpret(120, 4, 0).
+interpret(120, 5, 0).
+interpret(120, 6, 0).
+interpret(120, 7, 1).
+interpret(120, 8, 1).
+interpret(120, 9, 0).
+transition(120, 390).
 interpret(121, 0, 1).
 interpret(121, 1, 0).
 interpret(121, 2, 1).
@@ -1426,17 +1424,17 @@ interpret(127, 7, 1).
 interpret(127, 8, 1).
 interpret(127, 9, 0).
 transition(127, 385).
-%interpret(128, 0, 0).
-%interpret(128, 1, 1).
-%interpret(128, 2, 1).
-%interpret(128, 3, 0).
-%interpret(128, 4, 0).
-%interpret(128, 5, 1).
-%interpret(128, 6, 0).
-%interpret(128, 7, 1).
-%interpret(128, 8, 0).
-%interpret(128, 9, 0).
-%transition(128, 166).
+interpret(128, 0, 0).
+interpret(128, 1, 1).
+interpret(128, 2, 1).
+interpret(128, 3, 0).
+interpret(128, 4, 0).
+interpret(128, 5, 1).
+interpret(128, 6, 0).
+interpret(128, 7, 1).
+interpret(128, 8, 0).
+interpret(128, 9, 0).
+transition(128, 166).
 interpret(129, 0, 1).
 interpret(129, 1, 0).
 interpret(129, 2, 1).
@@ -1536,17 +1534,17 @@ interpret(137, 7, 1).
 interpret(137, 8, 0).
 interpret(137, 9, 0).
 transition(137, 133).
-%interpret(138, 0, 0).
-%interpret(138, 1, 0).
-%interpret(138, 2, 0).
-%interpret(138, 3, 0).
-%interpret(138, 4, 0).
-%interpret(138, 5, 0).
-%interpret(138, 6, 0).
-%interpret(138, 7, 1).
-%interpret(138, 8, 0).
-%interpret(138, 9, 0).
-%transition(138, 128).
+interpret(138, 0, 0).
+interpret(138, 1, 0).
+interpret(138, 2, 0).
+interpret(138, 3, 0).
+interpret(138, 4, 0).
+interpret(138, 5, 0).
+interpret(138, 6, 0).
+interpret(138, 7, 1).
+interpret(138, 8, 0).
+interpret(138, 9, 0).
+transition(138, 128).
 interpret(139, 0, 1).
 interpret(139, 1, 0).
 interpret(139, 2, 0).
@@ -1756,17 +1754,17 @@ interpret(157, 7, 0).
 interpret(157, 8, 0).
 interpret(157, 9, 0).
 transition(157, 25).
-%interpret(158, 0, 0).
-%interpret(158, 1, 0).
-%interpret(158, 2, 0).
-%interpret(158, 3, 0).
-%interpret(158, 4, 0).
-%interpret(158, 5, 0).
-%interpret(158, 6, 0).
-%interpret(158, 7, 0).
-%interpret(158, 8, 0).
-%interpret(158, 9, 0).
-%transition(158, 0).
+interpret(158, 0, 0).
+interpret(158, 1, 0).
+interpret(158, 2, 0).
+interpret(158, 3, 0).
+interpret(158, 4, 0).
+interpret(158, 5, 0).
+interpret(158, 6, 0).
+interpret(158, 7, 0).
+interpret(158, 8, 0).
+interpret(158, 9, 0).
+transition(158, 0).
 interpret(159, 0, 1).
 interpret(159, 1, 0).
 interpret(159, 2, 0).
@@ -1888,17 +1886,17 @@ interpret(169, 7, 1).
 interpret(169, 8, 0).
 interpret(169, 9, 0).
 transition(169, 133).
-%interpret(170, 0, 0).
-%interpret(170, 1, 1).
-%interpret(170, 2, 0).
-%interpret(170, 3, 0).
-%interpret(170, 4, 0).
-%interpret(170, 5, 1).
-%interpret(170, 6, 0).
-%interpret(170, 7, 1).
-%interpret(170, 8, 0).
-%interpret(170, 9, 0).
-%transition(170, 162).
+interpret(170, 0, 0).
+interpret(170, 1, 1).
+interpret(170, 2, 0).
+interpret(170, 3, 0).
+interpret(170, 4, 0).
+interpret(170, 5, 1).
+interpret(170, 6, 0).
+interpret(170, 7, 1).
+interpret(170, 8, 0).
+interpret(170, 9, 0).
+transition(170, 162).
 interpret(171, 0, 1).
 interpret(171, 1, 0).
 interpret(171, 2, 0).
@@ -1987,17 +1985,17 @@ interpret(178, 7, 1).
 interpret(178, 8, 0).
 interpret(178, 9, 0).
 transition(178, 162).
-%interpret(179, 0, 1).
-%interpret(179, 1, 0).
-%interpret(179, 2, 0).
-%interpret(179, 3, 0).
-%interpret(179, 4, 0).
-%interpret(179, 5, 0).
-%interpret(179, 6, 0).
-%interpret(179, 7, 1).
-%interpret(179, 8, 0).
-%interpret(179, 9, 0).
-%transition(179, 129).
+interpret(179, 0, 1).
+interpret(179, 1, 0).
+interpret(179, 2, 0).
+interpret(179, 3, 0).
+interpret(179, 4, 0).
+interpret(179, 5, 0).
+interpret(179, 6, 0).
+interpret(179, 7, 1).
+interpret(179, 8, 0).
+interpret(179, 9, 0).
+transition(179, 129).
 interpret(180, 0, 0).
 interpret(180, 1, 1).
 interpret(180, 2, 1).
@@ -2119,17 +2117,17 @@ interpret(190, 7, 1).
 interpret(190, 8, 0).
 interpret(190, 9, 0).
 transition(190, 130).
-%interpret(191, 0, 1).
-%interpret(191, 1, 0).
-%interpret(191, 2, 0).
-%interpret(191, 3, 0).
-%interpret(191, 4, 0).
-%interpret(191, 5, 0).
-%interpret(191, 6, 0).
-%interpret(191, 7, 1).
-%interpret(191, 8, 0).
-%interpret(191, 9, 0).
-%transition(191, 129).
+interpret(191, 0, 1).
+interpret(191, 1, 0).
+interpret(191, 2, 0).
+interpret(191, 3, 0).
+interpret(191, 4, 0).
+interpret(191, 5, 0).
+interpret(191, 6, 0).
+interpret(191, 7, 1).
+interpret(191, 8, 0).
+interpret(191, 9, 0).
+transition(191, 129).
 interpret(192, 0, 0).
 interpret(192, 1, 1).
 interpret(192, 2, 1).
@@ -2185,17 +2183,17 @@ interpret(196, 7, 1).
 interpret(196, 8, 0).
 interpret(196, 9, 0).
 transition(196, 174).
-%interpret(197, 0, 1).
-%interpret(197, 1, 0).
-%interpret(197, 2, 1).
-%interpret(197, 3, 1).
-%interpret(197, 4, 0).
-%interpret(197, 5, 0).
-%interpret(197, 6, 0).
-%interpret(197, 7, 1).
-%interpret(197, 8, 0).
-%interpret(197, 9, 0).
-%transition(197, 141).
+interpret(197, 0, 1).
+interpret(197, 1, 0).
+interpret(197, 2, 1).
+interpret(197, 3, 1).
+interpret(197, 4, 0).
+interpret(197, 5, 0).
+interpret(197, 6, 0).
+interpret(197, 7, 1).
+interpret(197, 8, 0).
+interpret(197, 9, 0).
+transition(197, 141).
 interpret(198, 0, 0).
 interpret(198, 1, 1).
 interpret(198, 2, 0).
@@ -2647,17 +2645,17 @@ interpret(238, 7, 1).
 interpret(238, 8, 0).
 interpret(238, 9, 0).
 transition(238, 162).
-%interpret(239, 0, 1).
-%interpret(239, 1, 0).
-%interpret(239, 2, 0).
-%interpret(239, 3, 0).
-%interpret(239, 4, 0).
-%interpret(239, 5, 0).
-%interpret(239, 6, 0).
-%interpret(239, 7, 1).
-%interpret(239, 8, 0).
-%interpret(239, 9, 0).
-%transition(239, 129).
+interpret(239, 0, 1).
+interpret(239, 1, 0).
+interpret(239, 2, 0).
+interpret(239, 3, 0).
+interpret(239, 4, 0).
+interpret(239, 5, 0).
+interpret(239, 6, 0).
+interpret(239, 7, 1).
+interpret(239, 8, 0).
+interpret(239, 9, 0).
+transition(239, 129).
 interpret(240, 0, 0).
 interpret(240, 1, 1).
 interpret(240, 2, 1).
@@ -2702,17 +2700,17 @@ interpret(243, 7, 1).
 interpret(243, 8, 0).
 interpret(243, 9, 0).
 transition(243, 129).
-%interpret(244, 0, 0).
-%interpret(244, 1, 1).
-%interpret(244, 2, 1).
-%interpret(244, 3, 1).
-%interpret(244, 4, 0).
-%interpret(244, 5, 1).
-%interpret(244, 6, 0).
-%interpret(244, 7, 1).
-%interpret(244, 8, 0).
-%interpret(244, 9, 0).
-%transition(244, 174).
+interpret(244, 0, 0).
+interpret(244, 1, 1).
+interpret(244, 2, 1).
+interpret(244, 3, 1).
+interpret(244, 4, 0).
+interpret(244, 5, 1).
+interpret(244, 6, 0).
+interpret(244, 7, 1).
+interpret(244, 8, 0).
+interpret(244, 9, 0).
+transition(244, 174).
 interpret(245, 0, 1).
 interpret(245, 1, 0).
 interpret(245, 2, 1).
@@ -2889,17 +2887,17 @@ interpret(260, 7, 1).
 interpret(260, 8, 1).
 interpret(260, 9, 1).
 transition(260, 958).
-%interpret(261, 0, 1).
-%interpret(261, 1, 0).
-%interpret(261, 2, 1).
-%interpret(261, 3, 1).
-%interpret(261, 4, 1).
-%interpret(261, 5, 0).
-%interpret(261, 6, 0).
-%interpret(261, 7, 1).
-%interpret(261, 8, 1).
-%interpret(261, 9, 1).
-%transition(261, 925).
+interpret(261, 0, 1).
+interpret(261, 1, 0).
+interpret(261, 2, 1).
+interpret(261, 3, 1).
+interpret(261, 4, 1).
+interpret(261, 5, 0).
+interpret(261, 6, 0).
+interpret(261, 7, 1).
+interpret(261, 8, 1).
+interpret(261, 9, 1).
+transition(261, 925).
 interpret(262, 0, 0).
 interpret(262, 1, 1).
 interpret(262, 2, 0).
@@ -3021,39 +3019,39 @@ interpret(272, 7, 0).
 interpret(272, 8, 1).
 interpret(272, 9, 1).
 transition(272, 784).
-%interpret(273, 0, 1).
-%interpret(273, 1, 0).
-%interpret(273, 2, 0).
-%interpret(273, 3, 0).
-%interpret(273, 4, 1).
-%interpret(273, 5, 0).
-%interpret(273, 6, 0).
-%interpret(273, 7, 0).
-%interpret(273, 8, 1).
-%interpret(273, 9, 1).
-%transition(273, 785).
-%interpret(274, 0, 0).
-%interpret(274, 1, 0).
-%interpret(274, 2, 0).
-%interpret(274, 3, 0).
-%interpret(274, 4, 0).
-%interpret(274, 5, 0).
-%interpret(274, 6, 0).
-%interpret(274, 7, 0).
-%interpret(274, 8, 1).
-%interpret(274, 9, 1).
-%transition(274, 768).
-%interpret(275, 0, 1).
-%interpret(275, 1, 0).
-%interpret(275, 2, 0).
-%interpret(275, 3, 0).
-%interpret(275, 4, 0).
-%interpret(275, 5, 0).
-%interpret(275, 6, 0).
-%interpret(275, 7, 0).
-%interpret(275, 8, 1).
-%interpret(275, 9, 1).
-%transition(275, 769).
+interpret(273, 0, 1).
+interpret(273, 1, 0).
+interpret(273, 2, 0).
+interpret(273, 3, 0).
+interpret(273, 4, 1).
+interpret(273, 5, 0).
+interpret(273, 6, 0).
+interpret(273, 7, 0).
+interpret(273, 8, 1).
+interpret(273, 9, 1).
+transition(273, 785).
+interpret(274, 0, 0).
+interpret(274, 1, 0).
+interpret(274, 2, 0).
+interpret(274, 3, 0).
+interpret(274, 4, 0).
+interpret(274, 5, 0).
+interpret(274, 6, 0).
+interpret(274, 7, 0).
+interpret(274, 8, 1).
+interpret(274, 9, 1).
+transition(274, 768).
+interpret(275, 0, 1).
+interpret(275, 1, 0).
+interpret(275, 2, 0).
+interpret(275, 3, 0).
+interpret(275, 4, 0).
+interpret(275, 5, 0).
+interpret(275, 6, 0).
+interpret(275, 7, 0).
+interpret(275, 8, 1).
+interpret(275, 9, 1).
+transition(275, 769).
 interpret(276, 0, 0).
 interpret(276, 1, 0).
 interpret(276, 2, 0).
@@ -3230,17 +3228,17 @@ interpret(291, 7, 1).
 interpret(291, 8, 1).
 interpret(291, 9, 1).
 transition(291, 897).
-%interpret(292, 0, 0).
-%interpret(292, 1, 1).
-%interpret(292, 2, 1).
-%interpret(292, 3, 1).
-%interpret(292, 4, 1).
-%interpret(292, 5, 1).
-%interpret(292, 6, 0).
-%interpret(292, 7, 1).
-%interpret(292, 8, 1).
-%interpret(292, 9, 1).
-%transition(292, 958).
+interpret(292, 0, 0).
+interpret(292, 1, 1).
+interpret(292, 2, 1).
+interpret(292, 3, 1).
+interpret(292, 4, 1).
+interpret(292, 5, 1).
+interpret(292, 6, 0).
+interpret(292, 7, 1).
+interpret(292, 8, 1).
+interpret(292, 9, 1).
+transition(292, 958).
 interpret(293, 0, 1).
 interpret(293, 1, 0).
 interpret(293, 2, 1).
@@ -3351,28 +3349,28 @@ interpret(302, 7, 1).
 interpret(302, 8, 1).
 interpret(302, 9, 1).
 transition(302, 930).
-%interpret(303, 0, 1).
-%interpret(303, 1, 0).
-%interpret(303, 2, 0).
-%interpret(303, 3, 0).
-%interpret(303, 4, 0).
-%interpret(303, 5, 0).
-%interpret(303, 6, 0).
-%interpret(303, 7, 1).
-%interpret(303, 8, 1).
-%interpret(303, 9, 1).
-%transition(303, 897).
-%interpret(304, 0, 0).
-%interpret(304, 1, 1).
-%interpret(304, 2, 1).
-%interpret(304, 3, 0).
-%interpret(304, 4, 1).
-%interpret(304, 5, 1).
-%interpret(304, 6, 0).
-%interpret(304, 7, 1).
-%interpret(304, 8, 1).
-%interpret(304, 9, 1).
-%transition(304, 950).
+interpret(303, 0, 1).
+interpret(303, 1, 0).
+interpret(303, 2, 0).
+interpret(303, 3, 0).
+interpret(303, 4, 0).
+interpret(303, 5, 0).
+interpret(303, 6, 0).
+interpret(303, 7, 1).
+interpret(303, 8, 1).
+interpret(303, 9, 1).
+transition(303, 897).
+interpret(304, 0, 0).
+interpret(304, 1, 1).
+interpret(304, 2, 1).
+interpret(304, 3, 0).
+interpret(304, 4, 1).
+interpret(304, 5, 1).
+interpret(304, 6, 0).
+interpret(304, 7, 1).
+interpret(304, 8, 1).
+interpret(304, 9, 1).
+transition(304, 950).
 interpret(305, 0, 1).
 interpret(305, 1, 0).
 interpret(305, 2, 1).
@@ -3516,17 +3514,17 @@ interpret(317, 7, 1).
 interpret(317, 8, 1).
 interpret(317, 9, 1).
 transition(317, 925).
-%interpret(318, 0, 0).
-%interpret(318, 1, 1).
-%interpret(318, 2, 0).
-%interpret(318, 3, 0).
-%interpret(318, 4, 0).
-%interpret(318, 5, 0).
-%interpret(318, 6, 0).
-%interpret(318, 7, 1).
-%interpret(318, 8, 1).
-%interpret(318, 9, 1).
-%transition(318, 898).
+interpret(318, 0, 0).
+interpret(318, 1, 1).
+interpret(318, 2, 0).
+interpret(318, 3, 0).
+interpret(318, 4, 0).
+interpret(318, 5, 0).
+interpret(318, 6, 0).
+interpret(318, 7, 1).
+interpret(318, 8, 1).
+interpret(318, 9, 1).
+transition(318, 898).
 interpret(319, 0, 1).
 interpret(319, 1, 0).
 interpret(319, 2, 0).
@@ -3659,17 +3657,17 @@ interpret(330, 7, 1).
 interpret(330, 8, 1).
 interpret(330, 9, 0).
 transition(330, 384).
-%interpret(331, 0, 1).
-%interpret(331, 1, 0).
-%interpret(331, 2, 0).
-%interpret(331, 3, 0).
-%interpret(331, 4, 0).
-%interpret(331, 5, 0).
-%interpret(331, 6, 0).
-%interpret(331, 7, 1).
-%interpret(331, 8, 1).
-%interpret(331, 9, 0).
-%transition(331, 385).
+interpret(331, 0, 1).
+interpret(331, 1, 0).
+interpret(331, 2, 0).
+interpret(331, 3, 0).
+interpret(331, 4, 0).
+interpret(331, 5, 0).
+interpret(331, 6, 0).
+interpret(331, 7, 1).
+interpret(331, 8, 1).
+interpret(331, 9, 0).
+transition(331, 385).
 interpret(332, 0, 0).
 interpret(332, 1, 0).
 interpret(332, 2, 1).
@@ -3681,17 +3679,17 @@ interpret(332, 7, 1).
 interpret(332, 8, 1).
 interpret(332, 9, 0).
 transition(332, 396).
-%interpret(333, 0, 1).
-%interpret(333, 1, 0).
-%interpret(333, 2, 1).
-%interpret(333, 3, 1).
-%interpret(333, 4, 0).
-%interpret(333, 5, 0).
-%interpret(333, 6, 0).
-%interpret(333, 7, 1).
-%interpret(333, 8, 1).
-%interpret(333, 9, 0).
-%transition(333, 397).
+interpret(333, 0, 1).
+interpret(333, 1, 0).
+interpret(333, 2, 1).
+interpret(333, 3, 1).
+interpret(333, 4, 0).
+interpret(333, 5, 0).
+interpret(333, 6, 0).
+interpret(333, 7, 1).
+interpret(333, 8, 1).
+interpret(333, 9, 0).
+transition(333, 397).
 interpret(334, 0, 0).
 interpret(334, 1, 0).
 interpret(334, 2, 0).
@@ -3747,17 +3745,17 @@ interpret(338, 7, 1).
 interpret(338, 8, 1).
 interpret(338, 9, 0).
 transition(338, 384).
-%interpret(339, 0, 1).
-%interpret(339, 1, 0).
-%interpret(339, 2, 0).
-%interpret(339, 3, 0).
-%interpret(339, 4, 0).
-%interpret(339, 5, 0).
-%interpret(339, 6, 0).
-%interpret(339, 7, 1).
-%interpret(339, 8, 1).
-%interpret(339, 9, 0).
-%transition(339, 385).
+interpret(339, 0, 1).
+interpret(339, 1, 0).
+interpret(339, 2, 0).
+interpret(339, 3, 0).
+interpret(339, 4, 0).
+interpret(339, 5, 0).
+interpret(339, 6, 0).
+interpret(339, 7, 1).
+interpret(339, 8, 1).
+interpret(339, 9, 0).
+transition(339, 385).
 interpret(340, 0, 0).
 interpret(340, 1, 0).
 interpret(340, 2, 0).
@@ -3791,17 +3789,17 @@ interpret(342, 7, 1).
 interpret(342, 8, 1).
 interpret(342, 9, 0).
 transition(342, 384).
-%interpret(343, 0, 1).
-%interpret(343, 1, 0).
-%interpret(343, 2, 0).
-%interpret(343, 3, 0).
-%interpret(343, 4, 0).
-%interpret(343, 5, 0).
-%interpret(343, 6, 0).
-%interpret(343, 7, 1).
-%interpret(343, 8, 1).
-%interpret(343, 9, 0).
-%transition(343, 385).
+interpret(343, 0, 1).
+interpret(343, 1, 0).
+interpret(343, 2, 0).
+interpret(343, 3, 0).
+interpret(343, 4, 0).
+interpret(343, 5, 0).
+interpret(343, 6, 0).
+interpret(343, 7, 1).
+interpret(343, 8, 1).
+interpret(343, 9, 0).
+transition(343, 385).
 interpret(344, 0, 0).
 interpret(344, 1, 0).
 interpret(344, 2, 0).
@@ -3879,17 +3877,17 @@ interpret(350, 7, 1).
 interpret(350, 8, 1).
 interpret(350, 9, 0).
 transition(350, 384).
-%interpret(351, 0, 1).
-%interpret(351, 1, 0).
-%interpret(351, 2, 0).
-%interpret(351, 3, 0).
-%interpret(351, 4, 0).
-%interpret(351, 5, 0).
-%interpret(351, 6, 0).
-%interpret(351, 7, 1).
-%interpret(351, 8, 1).
-%interpret(351, 9, 0).
-%transition(351, 385).
+interpret(351, 0, 1).
+interpret(351, 1, 0).
+interpret(351, 2, 0).
+interpret(351, 3, 0).
+interpret(351, 4, 0).
+interpret(351, 5, 0).
+interpret(351, 6, 0).
+interpret(351, 7, 1).
+interpret(351, 8, 1).
+interpret(351, 9, 0).
+transition(351, 385).
 interpret(352, 0, 0).
 interpret(352, 1, 1).
 interpret(352, 2, 1).
@@ -3912,17 +3910,17 @@ interpret(353, 7, 1).
 interpret(353, 8, 1).
 interpret(353, 9, 0).
 transition(353, 389).
-%interpret(354, 0, 0).
-%interpret(354, 1, 1).
-%interpret(354, 2, 0).
-%interpret(354, 3, 0).
-%interpret(354, 4, 0).
-%interpret(354, 5, 1).
-%interpret(354, 6, 0).
-%interpret(354, 7, 1).
-%interpret(354, 8, 1).
-%interpret(354, 9, 0).
-%transition(354, 418).
+interpret(354, 0, 0).
+interpret(354, 1, 1).
+interpret(354, 2, 0).
+interpret(354, 3, 0).
+interpret(354, 4, 0).
+interpret(354, 5, 1).
+interpret(354, 6, 0).
+interpret(354, 7, 1).
+interpret(354, 8, 1).
+interpret(354, 9, 0).
+transition(354, 418).
 interpret(355, 0, 1).
 interpret(355, 1, 0).
 interpret(355, 2, 0).
@@ -3945,17 +3943,17 @@ interpret(356, 7, 1).
 interpret(356, 8, 1).
 interpret(356, 9, 0).
 transition(356, 430).
-%interpret(357, 0, 1).
-%interpret(357, 1, 0).
-%interpret(357, 2, 1).
-%interpret(357, 3, 1).
-%interpret(357, 4, 0).
-%interpret(357, 5, 0).
-%interpret(357, 6, 0).
-%interpret(357, 7, 1).
-%interpret(357, 8, 1).
-%interpret(357, 9, 0).
-%transition(357, 397).
+interpret(357, 0, 1).
+interpret(357, 1, 0).
+interpret(357, 2, 1).
+interpret(357, 3, 1).
+interpret(357, 4, 0).
+interpret(357, 5, 0).
+interpret(357, 6, 0).
+interpret(357, 7, 1).
+interpret(357, 8, 1).
+interpret(357, 9, 0).
+transition(357, 397).
 interpret(358, 0, 0).
 interpret(358, 1, 1).
 interpret(358, 2, 0).
@@ -3978,17 +3976,17 @@ interpret(359, 7, 1).
 interpret(359, 8, 1).
 interpret(359, 9, 0).
 transition(359, 385).
-%interpret(360, 0, 0).
-%interpret(360, 1, 1).
-%interpret(360, 2, 1).
-%interpret(360, 3, 0).
-%interpret(360, 4, 0).
-%interpret(360, 5, 1).
-%interpret(360, 6, 0).
-%interpret(360, 7, 1).
-%interpret(360, 8, 1).
-%interpret(360, 9, 0).
-%transition(360, 422).
+interpret(360, 0, 0).
+interpret(360, 1, 1).
+interpret(360, 2, 1).
+interpret(360, 3, 0).
+interpret(360, 4, 0).
+interpret(360, 5, 1).
+interpret(360, 6, 0).
+interpret(360, 7, 1).
+interpret(360, 8, 1).
+interpret(360, 9, 0).
+transition(360, 422).
 interpret(361, 0, 1).
 interpret(361, 1, 0).
 interpret(361, 2, 1).
@@ -4044,17 +4042,17 @@ interpret(365, 7, 1).
 interpret(365, 8, 1).
 interpret(365, 9, 0).
 transition(365, 397).
-%interpret(366, 0, 0).
-%interpret(366, 1, 1).
-%interpret(366, 2, 0).
-%interpret(366, 3, 0).
-%interpret(366, 4, 0).
-%interpret(366, 5, 1).
-%interpret(366, 6, 0).
-%interpret(366, 7, 1).
-%interpret(366, 8, 1).
-%interpret(366, 9, 0).
-%transition(366, 418).
+interpret(366, 0, 0).
+interpret(366, 1, 1).
+interpret(366, 2, 0).
+interpret(366, 3, 0).
+interpret(366, 4, 0).
+interpret(366, 5, 1).
+interpret(366, 6, 0).
+interpret(366, 7, 1).
+interpret(366, 8, 1).
+interpret(366, 9, 0).
+transition(366, 418).
 interpret(367, 0, 1).
 interpret(367, 1, 0).
 interpret(367, 2, 0).
@@ -4099,17 +4097,17 @@ interpret(370, 7, 1).
 interpret(370, 8, 1).
 interpret(370, 9, 0).
 transition(370, 418).
-%interpret(371, 0, 1).
-%interpret(371, 1, 0).
-%interpret(371, 2, 0).
-%interpret(371, 3, 0).
-%interpret(371, 4, 0).
-%interpret(371, 5, 0).
-%interpret(371, 6, 0).
-%interpret(371, 7, 1).
-%interpret(371, 8, 1).
-%interpret(371, 9, 0).
-%transition(371, 385).
+interpret(371, 0, 1).
+interpret(371, 1, 0).
+interpret(371, 2, 0).
+interpret(371, 3, 0).
+interpret(371, 4, 0).
+interpret(371, 5, 0).
+interpret(371, 6, 0).
+interpret(371, 7, 1).
+interpret(371, 8, 1).
+interpret(371, 9, 0).
+transition(371, 385).
 interpret(372, 0, 0).
 interpret(372, 1, 1).
 interpret(372, 2, 1).
@@ -4209,17 +4207,17 @@ interpret(380, 7, 1).
 interpret(380, 8, 1).
 interpret(380, 9, 0).
 transition(380, 398).
-%interpret(381, 0, 1).
-%interpret(381, 1, 0).
-%interpret(381, 2, 1).
-%interpret(381, 3, 1).
-%interpret(381, 4, 0).
-%interpret(381, 5, 0).
-%interpret(381, 6, 0).
-%interpret(381, 7, 1).
-%interpret(381, 8, 1).
-%interpret(381, 9, 0).
-%transition(381, 397).
+interpret(381, 0, 1).
+interpret(381, 1, 0).
+interpret(381, 2, 1).
+interpret(381, 3, 1).
+interpret(381, 4, 0).
+interpret(381, 5, 0).
+interpret(381, 6, 0).
+interpret(381, 7, 1).
+interpret(381, 8, 1).
+interpret(381, 9, 0).
+transition(381, 397).
 interpret(382, 0, 0).
 interpret(382, 1, 1).
 interpret(382, 2, 0).
@@ -4330,17 +4328,17 @@ interpret(391, 7, 1).
 interpret(391, 8, 0).
 interpret(391, 9, 0).
 transition(391, 129).
-%interpret(392, 0, 0).
-%interpret(392, 1, 0).
-%interpret(392, 2, 1).
-%interpret(392, 3, 0).
-%interpret(392, 4, 0).
-%interpret(392, 5, 0).
-%interpret(392, 6, 0).
-%interpret(392, 7, 1).
-%interpret(392, 8, 0).
-%interpret(392, 9, 0).
-%transition(392, 132).
+interpret(392, 0, 0).
+interpret(392, 1, 0).
+interpret(392, 2, 1).
+interpret(392, 3, 0).
+interpret(392, 4, 0).
+interpret(392, 5, 0).
+interpret(392, 6, 0).
+interpret(392, 7, 1).
+interpret(392, 8, 0).
+interpret(392, 9, 0).
+transition(392, 132).
 interpret(393, 0, 1).
 interpret(393, 1, 0).
 interpret(393, 2, 1).
@@ -4352,17 +4350,17 @@ interpret(393, 7, 1).
 interpret(393, 8, 0).
 interpret(393, 9, 0).
 transition(393, 133).
-%interpret(394, 0, 0).
-%interpret(394, 1, 0).
-%interpret(394, 2, 0).
-%interpret(394, 3, 0).
-%interpret(394, 4, 0).
-%interpret(394, 5, 0).
-%interpret(394, 6, 0).
-%interpret(394, 7, 1).
-%interpret(394, 8, 0).
-%interpret(394, 9, 0).
-%transition(394, 128).
+interpret(394, 0, 0).
+interpret(394, 1, 0).
+interpret(394, 2, 0).
+interpret(394, 3, 0).
+interpret(394, 4, 0).
+interpret(394, 5, 0).
+interpret(394, 6, 0).
+interpret(394, 7, 1).
+interpret(394, 8, 0).
+interpret(394, 9, 0).
+transition(394, 128).
 interpret(395, 0, 1).
 interpret(395, 1, 0).
 interpret(395, 2, 0).
@@ -4385,17 +4383,17 @@ interpret(396, 7, 1).
 interpret(396, 8, 0).
 interpret(396, 9, 0).
 transition(396, 140).
-%interpret(397, 0, 1).
-%interpret(397, 1, 0).
-%interpret(397, 2, 1).
-%interpret(397, 3, 1).
-%interpret(397, 4, 0).
-%interpret(397, 5, 0).
-%interpret(397, 6, 0).
-%interpret(397, 7, 1).
-%interpret(397, 8, 0).
-%interpret(397, 9, 0).
-%transition(397, 141).
+interpret(397, 0, 1).
+interpret(397, 1, 0).
+interpret(397, 2, 1).
+interpret(397, 3, 1).
+interpret(397, 4, 0).
+interpret(397, 5, 0).
+interpret(397, 6, 0).
+interpret(397, 7, 1).
+interpret(397, 8, 0).
+interpret(397, 9, 0).
+transition(397, 141).
 interpret(398, 0, 0).
 interpret(398, 1, 0).
 interpret(398, 2, 0).
@@ -4451,17 +4449,17 @@ interpret(402, 7, 0).
 interpret(402, 8, 1).
 interpret(402, 9, 0).
 transition(402, 256).
-%interpret(403, 0, 1).
-%interpret(403, 1, 0).
-%interpret(403, 2, 0).
-%interpret(403, 3, 0).
-%interpret(403, 4, 0).
-%interpret(403, 5, 0).
-%interpret(403, 6, 0).
-%interpret(403, 7, 0).
-%interpret(403, 8, 1).
-%interpret(403, 9, 0).
-%transition(403, 257).
+interpret(403, 0, 1).
+interpret(403, 1, 0).
+interpret(403, 2, 0).
+interpret(403, 3, 0).
+interpret(403, 4, 0).
+interpret(403, 5, 0).
+interpret(403, 6, 0).
+interpret(403, 7, 0).
+interpret(403, 8, 1).
+interpret(403, 9, 0).
+transition(403, 257).
 interpret(404, 0, 0).
 interpret(404, 1, 0).
 interpret(404, 2, 0).
@@ -4528,17 +4526,17 @@ interpret(409, 7, 0).
 interpret(409, 8, 1).
 interpret(409, 9, 0).
 transition(409, 257).
-%interpret(410, 0, 0).
-%interpret(410, 1, 0).
-%interpret(410, 2, 0).
-%interpret(410, 3, 0).
-%interpret(410, 4, 0).
-%interpret(410, 5, 0).
-%interpret(410, 6, 0).
-%interpret(410, 7, 0).
-%interpret(410, 8, 1).
-%interpret(410, 9, 0).
-%transition(410, 256).
+interpret(410, 0, 0).
+interpret(410, 1, 0).
+interpret(410, 2, 0).
+interpret(410, 3, 0).
+interpret(410, 4, 0).
+interpret(410, 5, 0).
+interpret(410, 6, 0).
+interpret(410, 7, 0).
+interpret(410, 8, 1).
+interpret(410, 9, 0).
+transition(410, 256).
 interpret(411, 0, 1).
 interpret(411, 1, 0).
 interpret(411, 2, 0).
@@ -4605,17 +4603,17 @@ interpret(416, 7, 1).
 interpret(416, 8, 0).
 interpret(416, 9, 0).
 transition(416, 166).
-%interpret(417, 0, 1).
-%interpret(417, 1, 0).
-%interpret(417, 2, 1).
-%interpret(417, 3, 0).
-%interpret(417, 4, 0).
-%interpret(417, 5, 0).
-%interpret(417, 6, 0).
-%interpret(417, 7, 1).
-%interpret(417, 8, 0).
-%interpret(417, 9, 0).
-%transition(417, 133).
+interpret(417, 0, 1).
+interpret(417, 1, 0).
+interpret(417, 2, 1).
+interpret(417, 3, 0).
+interpret(417, 4, 0).
+interpret(417, 5, 0).
+interpret(417, 6, 0).
+interpret(417, 7, 1).
+interpret(417, 8, 0).
+interpret(417, 9, 0).
+transition(417, 133).
 interpret(418, 0, 0).
 interpret(418, 1, 1).
 interpret(418, 2, 0).
@@ -4726,17 +4724,17 @@ interpret(427, 7, 1).
 interpret(427, 8, 0).
 interpret(427, 9, 0).
 transition(427, 129).
-%interpret(428, 0, 0).
-%interpret(428, 1, 1).
-%interpret(428, 2, 1).
-%interpret(428, 3, 1).
-%interpret(428, 4, 0).
-%interpret(428, 5, 1).
-%interpret(428, 6, 0).
-%interpret(428, 7, 1).
-%interpret(428, 8, 0).
-%interpret(428, 9, 0).
-%transition(428, 174).
+interpret(428, 0, 0).
+interpret(428, 1, 1).
+interpret(428, 2, 1).
+interpret(428, 3, 1).
+interpret(428, 4, 0).
+interpret(428, 5, 1).
+interpret(428, 6, 0).
+interpret(428, 7, 1).
+interpret(428, 8, 0).
+interpret(428, 9, 0).
+transition(428, 174).
 interpret(429, 0, 1).
 interpret(429, 1, 0).
 interpret(429, 2, 1).
@@ -4946,17 +4944,17 @@ interpret(447, 7, 1).
 interpret(447, 8, 1).
 interpret(447, 9, 0).
 transition(447, 385).
-%interpret(448, 0, 0).
-%interpret(448, 1, 1).
-%interpret(448, 2, 1).
-%interpret(448, 3, 0).
-%interpret(448, 4, 0).
-%interpret(448, 5, 1).
-%interpret(448, 6, 0).
-%interpret(448, 7, 1).
-%interpret(448, 8, 1).
-%interpret(448, 9, 0).
-%transition(448, 422).
+interpret(448, 0, 0).
+interpret(448, 1, 1).
+interpret(448, 2, 1).
+interpret(448, 3, 0).
+interpret(448, 4, 0).
+interpret(448, 5, 1).
+interpret(448, 6, 0).
+interpret(448, 7, 1).
+interpret(448, 8, 1).
+interpret(448, 9, 0).
+transition(448, 422).
 interpret(449, 0, 1).
 interpret(449, 1, 0).
 interpret(449, 2, 1).
@@ -5023,17 +5021,17 @@ interpret(454, 7, 1).
 interpret(454, 8, 1).
 interpret(454, 9, 0).
 transition(454, 418).
-%interpret(455, 0, 1).
-%interpret(455, 1, 0).
-%interpret(455, 2, 0).
-%interpret(455, 3, 0).
-%interpret(455, 4, 0).
-%interpret(455, 5, 0).
-%interpret(455, 6, 0).
-%interpret(455, 7, 1).
-%interpret(455, 8, 1).
-%interpret(455, 9, 0).
-%transition(455, 385).
+interpret(455, 0, 1).
+interpret(455, 1, 0).
+interpret(455, 2, 0).
+interpret(455, 3, 0).
+interpret(455, 4, 0).
+interpret(455, 5, 0).
+interpret(455, 6, 0).
+interpret(455, 7, 1).
+interpret(455, 8, 1).
+interpret(455, 9, 0).
+transition(455, 385).
 interpret(456, 0, 0).
 interpret(456, 1, 0).
 interpret(456, 2, 1).
@@ -5342,28 +5340,28 @@ interpret(483, 7, 1).
 interpret(483, 8, 1).
 interpret(483, 9, 0).
 transition(483, 385).
-%interpret(484, 0, 0).
-%interpret(484, 1, 1).
-%interpret(484, 2, 1).
-%interpret(484, 3, 1).
-%interpret(484, 4, 0).
-%interpret(484, 5, 1).
-%interpret(484, 6, 0).
-%interpret(484, 7, 1).
-%interpret(484, 8, 1).
-%interpret(484, 9, 0).
-%transition(484, 430).
-%interpret(485, 0, 1).
-%interpret(485, 1, 0).
-%interpret(485, 2, 1).
-%interpret(485, 3, 1).
-%interpret(485, 4, 0).
-%interpret(485, 5, 0).
-%interpret(485, 6, 0).
-%interpret(485, 7, 1).
-%interpret(485, 8, 1).
-%interpret(485, 9, 0).
-%transition(485, 397).
+interpret(484, 0, 0).
+interpret(484, 1, 1).
+interpret(484, 2, 1).
+interpret(484, 3, 1).
+interpret(484, 4, 0).
+interpret(484, 5, 1).
+interpret(484, 6, 0).
+interpret(484, 7, 1).
+interpret(484, 8, 1).
+interpret(484, 9, 0).
+transition(484, 430).
+interpret(485, 0, 1).
+interpret(485, 1, 0).
+interpret(485, 2, 1).
+interpret(485, 3, 1).
+interpret(485, 4, 0).
+interpret(485, 5, 0).
+interpret(485, 6, 0).
+interpret(485, 7, 1).
+interpret(485, 8, 1).
+interpret(485, 9, 0).
+transition(485, 397).
 interpret(486, 0, 0).
 interpret(486, 1, 1).
 interpret(486, 2, 0).
@@ -5518,17 +5516,17 @@ interpret(499, 7, 1).
 interpret(499, 8, 1).
 interpret(499, 9, 0).
 transition(499, 385).
-%interpret(500, 0, 0).
-%interpret(500, 1, 1).
-%interpret(500, 2, 1).
-%interpret(500, 3, 1).
-%interpret(500, 4, 0).
-%interpret(500, 5, 1).
-%interpret(500, 6, 0).
-%interpret(500, 7, 1).
-%interpret(500, 8, 1).
-%interpret(500, 9, 0).
-%transition(500, 430).
+interpret(500, 0, 0).
+interpret(500, 1, 1).
+interpret(500, 2, 1).
+interpret(500, 3, 1).
+interpret(500, 4, 0).
+interpret(500, 5, 1).
+interpret(500, 6, 0).
+interpret(500, 7, 1).
+interpret(500, 8, 1).
+interpret(500, 9, 0).
+transition(500, 430).
 interpret(501, 0, 1).
 interpret(501, 1, 0).
 interpret(501, 2, 1).
@@ -5661,28 +5659,28 @@ interpret(512, 7, 0).
 interpret(512, 8, 1).
 interpret(512, 9, 1).
 transition(512, 832).
-%interpret(513, 0, 1).
-%interpret(513, 1, 0).
-%interpret(513, 2, 0).
-%interpret(513, 3, 0).
-%interpret(513, 4, 0).
-%interpret(513, 5, 0).
-%interpret(513, 6, 1).
-%interpret(513, 7, 0).
-%interpret(513, 8, 1).
-%interpret(513, 9, 1).
-%transition(513, 833).
-%interpret(514, 0, 0).
-%interpret(514, 1, 0).
-%interpret(514, 2, 0).
-%interpret(514, 3, 0).
-%interpret(514, 4, 0).
-%interpret(514, 5, 0).
-%interpret(514, 6, 1).
-%interpret(514, 7, 0).
-%interpret(514, 8, 1).
-%interpret(514, 9, 1).
-%transition(514, 832).
+interpret(513, 0, 1).
+interpret(513, 1, 0).
+interpret(513, 2, 0).
+interpret(513, 3, 0).
+interpret(513, 4, 0).
+interpret(513, 5, 0).
+interpret(513, 6, 1).
+interpret(513, 7, 0).
+interpret(513, 8, 1).
+interpret(513, 9, 1).
+transition(513, 833).
+interpret(514, 0, 0).
+interpret(514, 1, 0).
+interpret(514, 2, 0).
+interpret(514, 3, 0).
+interpret(514, 4, 0).
+interpret(514, 5, 0).
+interpret(514, 6, 1).
+interpret(514, 7, 0).
+interpret(514, 8, 1).
+interpret(514, 9, 1).
+transition(514, 832).
 interpret(515, 0, 1).
 interpret(515, 1, 0).
 interpret(515, 2, 0).
@@ -5947,17 +5945,17 @@ interpret(538, 7, 0).
 interpret(538, 8, 1).
 interpret(538, 9, 1).
 transition(538, 832).
-%interpret(539, 0, 1).
-%interpret(539, 1, 0).
-%interpret(539, 2, 0).
-%interpret(539, 3, 0).
-%interpret(539, 4, 0).
-%interpret(539, 5, 0).
-%interpret(539, 6, 1).
-%interpret(539, 7, 0).
-%interpret(539, 8, 1).
-%interpret(539, 9, 1).
-%transition(539, 833).
+interpret(539, 0, 1).
+interpret(539, 1, 0).
+interpret(539, 2, 0).
+interpret(539, 3, 0).
+interpret(539, 4, 0).
+interpret(539, 5, 0).
+interpret(539, 6, 1).
+interpret(539, 7, 0).
+interpret(539, 8, 1).
+interpret(539, 9, 1).
+transition(539, 833).
 interpret(540, 0, 0).
 interpret(540, 1, 0).
 interpret(540, 2, 0).
@@ -6090,17 +6088,17 @@ interpret(551, 7, 0).
 interpret(551, 8, 1).
 interpret(551, 9, 1).
 transition(551, 833).
-%interpret(552, 0, 0).
-%interpret(552, 1, 0).
-%interpret(552, 2, 0).
-%interpret(552, 3, 0).
-%interpret(552, 4, 0).
-%interpret(552, 5, 0).
-%interpret(552, 6, 1).
-%interpret(552, 7, 0).
-%interpret(552, 8, 1).
-%interpret(552, 9, 1).
-%transition(552, 832).
+interpret(552, 0, 0).
+interpret(552, 1, 0).
+interpret(552, 2, 0).
+interpret(552, 3, 0).
+interpret(552, 4, 0).
+interpret(552, 5, 0).
+interpret(552, 6, 1).
+interpret(552, 7, 0).
+interpret(552, 8, 1).
+interpret(552, 9, 1).
+transition(552, 832).
 interpret(553, 0, 1).
 interpret(553, 1, 0).
 interpret(553, 2, 0).
@@ -6354,17 +6352,17 @@ interpret(575, 7, 0).
 interpret(575, 8, 1).
 interpret(575, 9, 1).
 transition(575, 833).
-%interpret(576, 0, 0).
-%interpret(576, 1, 0).
-%interpret(576, 2, 0).
-%interpret(576, 3, 0).
-%interpret(576, 4, 0).
-%interpret(576, 5, 0).
-%interpret(576, 6, 1).
-%interpret(576, 7, 1).
-%interpret(576, 8, 1).
-%interpret(576, 9, 0).
-%transition(576, 448).
+interpret(576, 0, 0).
+interpret(576, 1, 0).
+interpret(576, 2, 0).
+interpret(576, 3, 0).
+interpret(576, 4, 0).
+interpret(576, 5, 0).
+interpret(576, 6, 1).
+interpret(576, 7, 1).
+interpret(576, 8, 1).
+interpret(576, 9, 0).
+transition(576, 448).
 interpret(577, 0, 1).
 interpret(577, 1, 0).
 interpret(577, 2, 0).
@@ -6618,17 +6616,17 @@ interpret(599, 7, 1).
 interpret(599, 8, 1).
 interpret(599, 9, 0).
 transition(599, 449).
-%interpret(600, 0, 0).
-%interpret(600, 1, 0).
-%interpret(600, 2, 0).
-%interpret(600, 3, 0).
-%interpret(600, 4, 0).
-%interpret(600, 5, 0).
-%interpret(600, 6, 1).
-%interpret(600, 7, 1).
-%interpret(600, 8, 1).
-%interpret(600, 9, 0).
-%transition(600, 448).
+interpret(600, 0, 0).
+interpret(600, 1, 0).
+interpret(600, 2, 0).
+interpret(600, 3, 0).
+interpret(600, 4, 0).
+interpret(600, 5, 0).
+interpret(600, 6, 1).
+interpret(600, 7, 1).
+interpret(600, 8, 1).
+interpret(600, 9, 0).
+transition(600, 448).
 interpret(601, 0, 1).
 interpret(601, 1, 0).
 interpret(601, 2, 0).
@@ -6673,17 +6671,17 @@ interpret(604, 7, 1).
 interpret(604, 8, 1).
 interpret(604, 9, 0).
 transition(604, 456).
-%interpret(605, 0, 1).
-%interpret(605, 1, 0).
-%interpret(605, 2, 0).
-%interpret(605, 3, 1).
-%interpret(605, 4, 0).
-%interpret(605, 5, 0).
-%interpret(605, 6, 1).
-%interpret(605, 7, 1).
-%interpret(605, 8, 1).
-%interpret(605, 9, 0).
-%transition(605, 457).
+interpret(605, 0, 1).
+interpret(605, 1, 0).
+interpret(605, 2, 0).
+interpret(605, 3, 1).
+interpret(605, 4, 0).
+interpret(605, 5, 0).
+interpret(605, 6, 1).
+interpret(605, 7, 1).
+interpret(605, 8, 1).
+interpret(605, 9, 0).
+transition(605, 457).
 interpret(606, 0, 0).
 interpret(606, 1, 0).
 interpret(606, 2, 0).
@@ -6717,17 +6715,17 @@ interpret(608, 7, 1).
 interpret(608, 8, 1).
 interpret(608, 9, 0).
 transition(608, 448).
-%interpret(609, 0, 1).
-%interpret(609, 1, 0).
-%interpret(609, 2, 0).
-%interpret(609, 3, 0).
-%interpret(609, 4, 0).
-%interpret(609, 5, 0).
-%interpret(609, 6, 1).
-%interpret(609, 7, 1).
-%interpret(609, 8, 1).
-%interpret(609, 9, 0).
-%transition(609, 449).
+interpret(609, 0, 1).
+interpret(609, 1, 0).
+interpret(609, 2, 0).
+interpret(609, 3, 0).
+interpret(609, 4, 0).
+interpret(609, 5, 0).
+interpret(609, 6, 1).
+interpret(609, 7, 1).
+interpret(609, 8, 1).
+interpret(609, 9, 0).
+transition(609, 449).
 interpret(610, 0, 0).
 interpret(610, 1, 0).
 interpret(610, 2, 0).
@@ -6772,17 +6770,17 @@ interpret(613, 7, 1).
 interpret(613, 8, 1).
 interpret(613, 9, 0).
 transition(613, 457).
-%interpret(614, 0, 0).
-%interpret(614, 1, 0).
-%interpret(614, 2, 0).
-%interpret(614, 3, 0).
-%interpret(614, 4, 0).
-%interpret(614, 5, 0).
-%interpret(614, 6, 1).
-%interpret(614, 7, 1).
-%interpret(614, 8, 1).
-%interpret(614, 9, 0).
-%transition(614, 448).
+interpret(614, 0, 0).
+interpret(614, 1, 0).
+interpret(614, 2, 0).
+interpret(614, 3, 0).
+interpret(614, 4, 0).
+interpret(614, 5, 0).
+interpret(614, 6, 1).
+interpret(614, 7, 1).
+interpret(614, 8, 1).
+interpret(614, 9, 0).
+transition(614, 448).
 interpret(615, 0, 1).
 interpret(615, 1, 0).
 interpret(615, 2, 0).
@@ -6948,17 +6946,17 @@ interpret(629, 7, 1).
 interpret(629, 8, 1).
 interpret(629, 9, 0).
 transition(629, 457).
-%interpret(630, 0, 0).
-%interpret(630, 1, 0).
-%interpret(630, 2, 0).
-%interpret(630, 3, 0).
-%interpret(630, 4, 0).
-%interpret(630, 5, 0).
-%interpret(630, 6, 1).
-%interpret(630, 7, 1).
-%interpret(630, 8, 1).
-%interpret(630, 9, 0).
-%transition(630, 448).
+interpret(630, 0, 0).
+interpret(630, 1, 0).
+interpret(630, 2, 0).
+interpret(630, 3, 0).
+interpret(630, 4, 0).
+interpret(630, 5, 0).
+interpret(630, 6, 1).
+interpret(630, 7, 1).
+interpret(630, 8, 1).
+interpret(630, 9, 0).
+transition(630, 448).
 interpret(631, 0, 1).
 interpret(631, 1, 0).
 interpret(631, 2, 0).
@@ -7014,17 +7012,17 @@ interpret(635, 7, 1).
 interpret(635, 8, 1).
 interpret(635, 9, 0).
 transition(635, 449).
-%interpret(636, 0, 0).
-%interpret(636, 1, 0).
-%interpret(636, 2, 0).
-%interpret(636, 3, 1).
-%interpret(636, 4, 0).
-%interpret(636, 5, 0).
-%interpret(636, 6, 1).
-%interpret(636, 7, 1).
-%interpret(636, 8, 1).
-%interpret(636, 9, 0).
-%transition(636, 456).
+interpret(636, 0, 0).
+interpret(636, 1, 0).
+interpret(636, 2, 0).
+interpret(636, 3, 1).
+interpret(636, 4, 0).
+interpret(636, 5, 0).
+interpret(636, 6, 1).
+interpret(636, 7, 1).
+interpret(636, 8, 1).
+interpret(636, 9, 0).
+transition(636, 456).
 interpret(637, 0, 1).
 interpret(637, 1, 0).
 interpret(637, 2, 0).
@@ -7080,28 +7078,28 @@ interpret(641, 7, 0).
 interpret(641, 8, 0).
 interpret(641, 9, 0).
 transition(641, 65).
-%interpret(642, 0, 0).
-%interpret(642, 1, 0).
-%interpret(642, 2, 0).
-%interpret(642, 3, 0).
-%interpret(642, 4, 0).
-%interpret(642, 5, 0).
-%interpret(642, 6, 1).
-%interpret(642, 7, 0).
-%interpret(642, 8, 0).
-%interpret(642, 9, 0).
-%transition(642, 64).
-%interpret(643, 0, 1).
-%interpret(643, 1, 0).
-%interpret(643, 2, 0).
-%interpret(643, 3, 0).
-%interpret(643, 4, 0).
-%interpret(643, 5, 0).
-%interpret(643, 6, 1).
-%interpret(643, 7, 0).
-%interpret(643, 8, 0).
-%interpret(643, 9, 0).
-%transition(643, 65).
+interpret(642, 0, 0).
+interpret(642, 1, 0).
+interpret(642, 2, 0).
+interpret(642, 3, 0).
+interpret(642, 4, 0).
+interpret(642, 5, 0).
+interpret(642, 6, 1).
+interpret(642, 7, 0).
+interpret(642, 8, 0).
+interpret(642, 9, 0).
+transition(642, 64).
+interpret(643, 0, 1).
+interpret(643, 1, 0).
+interpret(643, 2, 0).
+interpret(643, 3, 0).
+interpret(643, 4, 0).
+interpret(643, 5, 0).
+interpret(643, 6, 1).
+interpret(643, 7, 0).
+interpret(643, 8, 0).
+interpret(643, 9, 0).
+transition(643, 65).
 interpret(644, 0, 0).
 interpret(644, 1, 0).
 interpret(644, 2, 0).
@@ -7168,17 +7166,17 @@ interpret(649, 7, 0).
 interpret(649, 8, 0).
 interpret(649, 9, 0).
 transition(649, 65).
-%interpret(650, 0, 0).
-%interpret(650, 1, 0).
-%interpret(650, 2, 0).
-%interpret(650, 3, 0).
-%interpret(650, 4, 0).
-%interpret(650, 5, 0).
-%interpret(650, 6, 1).
-%interpret(650, 7, 0).
-%interpret(650, 8, 0).
-%interpret(650, 9, 0).
-%transition(650, 64).
+interpret(650, 0, 0).
+interpret(650, 1, 0).
+interpret(650, 2, 0).
+interpret(650, 3, 0).
+interpret(650, 4, 0).
+interpret(650, 5, 0).
+interpret(650, 6, 1).
+interpret(650, 7, 0).
+interpret(650, 8, 0).
+interpret(650, 9, 0).
+transition(650, 64).
 interpret(651, 0, 1).
 interpret(651, 1, 0).
 interpret(651, 2, 0).
@@ -7278,17 +7276,17 @@ interpret(659, 7, 0).
 interpret(659, 8, 0).
 interpret(659, 9, 0).
 transition(659, 65).
-%interpret(660, 0, 0).
-%interpret(660, 1, 0).
-%interpret(660, 2, 0).
-%interpret(660, 3, 1).
-%interpret(660, 4, 1).
-%interpret(660, 5, 0).
-%interpret(660, 6, 1).
-%interpret(660, 7, 0).
-%interpret(660, 8, 0).
-%interpret(660, 9, 0).
-%transition(660, 88).
+interpret(660, 0, 0).
+interpret(660, 1, 0).
+interpret(660, 2, 0).
+interpret(660, 3, 1).
+interpret(660, 4, 1).
+interpret(660, 5, 0).
+interpret(660, 6, 1).
+interpret(660, 7, 0).
+interpret(660, 8, 0).
+interpret(660, 9, 0).
+transition(660, 88).
 interpret(661, 0, 1).
 interpret(661, 1, 0).
 interpret(661, 2, 0).
@@ -7421,17 +7419,17 @@ interpret(672, 7, 0).
 interpret(672, 8, 0).
 interpret(672, 9, 0).
 transition(672, 64).
-%interpret(673, 0, 1).
-%interpret(673, 1, 0).
-%interpret(673, 2, 0).
-%interpret(673, 3, 0).
-%interpret(673, 4, 0).
-%interpret(673, 5, 0).
-%interpret(673, 6, 1).
-%interpret(673, 7, 0).
-%interpret(673, 8, 0).
-%interpret(673, 9, 0).
-%transition(673, 65).
+interpret(673, 0, 1).
+interpret(673, 1, 0).
+interpret(673, 2, 0).
+interpret(673, 3, 0).
+interpret(673, 4, 0).
+interpret(673, 5, 0).
+interpret(673, 6, 1).
+interpret(673, 7, 0).
+interpret(673, 8, 0).
+interpret(673, 9, 0).
+transition(673, 65).
 interpret(674, 0, 0).
 interpret(674, 1, 0).
 interpret(674, 2, 0).
@@ -7586,17 +7584,17 @@ interpret(687, 7, 0).
 interpret(687, 8, 0).
 interpret(687, 9, 0).
 transition(687, 65).
-%interpret(688, 0, 0).
-%interpret(688, 1, 0).
-%interpret(688, 2, 0).
-%interpret(688, 3, 0).
-%interpret(688, 4, 1).
-%interpret(688, 5, 0).
-%interpret(688, 6, 1).
-%interpret(688, 7, 0).
-%interpret(688, 8, 0).
-%interpret(688, 9, 0).
-%transition(688, 80).
+interpret(688, 0, 0).
+interpret(688, 1, 0).
+interpret(688, 2, 0).
+interpret(688, 3, 0).
+interpret(688, 4, 1).
+interpret(688, 5, 0).
+interpret(688, 6, 1).
+interpret(688, 7, 0).
+interpret(688, 8, 0).
+interpret(688, 9, 0).
+transition(688, 80).
 interpret(689, 0, 1).
 interpret(689, 1, 0).
 interpret(689, 2, 0).
@@ -7608,17 +7606,17 @@ interpret(689, 7, 0).
 interpret(689, 8, 0).
 interpret(689, 9, 0).
 transition(689, 81).
-%interpret(690, 0, 0).
-%interpret(690, 1, 0).
-%interpret(690, 2, 0).
-%interpret(690, 3, 0).
-%interpret(690, 4, 0).
-%interpret(690, 5, 0).
-%interpret(690, 6, 1).
-%interpret(690, 7, 0).
-%interpret(690, 8, 0).
-%interpret(690, 9, 0).
-%transition(690, 64).
+interpret(690, 0, 0).
+interpret(690, 1, 0).
+interpret(690, 2, 0).
+interpret(690, 3, 0).
+interpret(690, 4, 0).
+interpret(690, 5, 0).
+interpret(690, 6, 1).
+interpret(690, 7, 0).
+interpret(690, 8, 0).
+interpret(690, 9, 0).
+transition(690, 64).
 interpret(691, 0, 1).
 interpret(691, 1, 0).
 interpret(691, 2, 0).
@@ -7707,17 +7705,17 @@ interpret(698, 7, 0).
 interpret(698, 8, 0).
 interpret(698, 9, 0).
 transition(698, 64).
-%interpret(699, 0, 1).
-%interpret(699, 1, 0).
-%interpret(699, 2, 0).
-%interpret(699, 3, 0).
-%interpret(699, 4, 0).
-%interpret(699, 5, 0).
-%interpret(699, 6, 1).
-%interpret(699, 7, 0).
-%interpret(699, 8, 0).
-%interpret(699, 9, 0).
-%transition(699, 65).
+interpret(699, 0, 1).
+interpret(699, 1, 0).
+interpret(699, 2, 0).
+interpret(699, 3, 0).
+interpret(699, 4, 0).
+interpret(699, 5, 0).
+interpret(699, 6, 1).
+interpret(699, 7, 0).
+interpret(699, 8, 0).
+interpret(699, 9, 0).
+transition(699, 65).
 interpret(700, 0, 0).
 interpret(700, 1, 0).
 interpret(700, 2, 0).
@@ -7872,17 +7870,17 @@ interpret(713, 7, 1).
 interpret(713, 8, 0).
 interpret(713, 9, 0).
 transition(713, 193).
-%interpret(714, 0, 0).
-%interpret(714, 1, 0).
-%interpret(714, 2, 0).
-%interpret(714, 3, 0).
-%interpret(714, 4, 0).
-%interpret(714, 5, 0).
-%interpret(714, 6, 1).
-%interpret(714, 7, 1).
-%interpret(714, 8, 0).
-%interpret(714, 9, 0).
-%transition(714, 192).
+interpret(714, 0, 0).
+interpret(714, 1, 0).
+interpret(714, 2, 0).
+interpret(714, 3, 0).
+interpret(714, 4, 0).
+interpret(714, 5, 0).
+interpret(714, 6, 1).
+interpret(714, 7, 1).
+interpret(714, 8, 0).
+interpret(714, 9, 0).
+transition(714, 192).
 interpret(715, 0, 1).
 interpret(715, 1, 0).
 interpret(715, 2, 0).
@@ -8015,17 +8013,17 @@ interpret(726, 7, 1).
 interpret(726, 8, 0).
 interpret(726, 9, 0).
 transition(726, 192).
-%interpret(727, 0, 1).
-%interpret(727, 1, 0).
-%interpret(727, 2, 0).
-%interpret(727, 3, 0).
-%interpret(727, 4, 0).
-%interpret(727, 5, 0).
-%interpret(727, 6, 1).
-%interpret(727, 7, 1).
-%interpret(727, 8, 0).
-%interpret(727, 9, 0).
-%transition(727, 193).
+interpret(727, 0, 1).
+interpret(727, 1, 0).
+interpret(727, 2, 0).
+interpret(727, 3, 0).
+interpret(727, 4, 0).
+interpret(727, 5, 0).
+interpret(727, 6, 1).
+interpret(727, 7, 1).
+interpret(727, 8, 0).
+interpret(727, 9, 0).
+transition(727, 193).
 interpret(728, 0, 0).
 interpret(728, 1, 0).
 interpret(728, 2, 0).
@@ -8037,17 +8035,17 @@ interpret(728, 7, 1).
 interpret(728, 8, 0).
 interpret(728, 9, 0).
 transition(728, 192).
-%interpret(729, 0, 1).
-%interpret(729, 1, 0).
-%interpret(729, 2, 0).
-%interpret(729, 3, 0).
-%interpret(729, 4, 0).
-%interpret(729, 5, 0).
-%interpret(729, 6, 1).
-%interpret(729, 7, 1).
-%interpret(729, 8, 0).
-%interpret(729, 9, 0).
-%transition(729, 193).
+interpret(729, 0, 1).
+interpret(729, 1, 0).
+interpret(729, 2, 0).
+interpret(729, 3, 0).
+interpret(729, 4, 0).
+interpret(729, 5, 0).
+interpret(729, 6, 1).
+interpret(729, 7, 1).
+interpret(729, 8, 0).
+interpret(729, 9, 0).
+transition(729, 193).
 interpret(730, 0, 0).
 interpret(730, 1, 0).
 interpret(730, 2, 0).
@@ -8433,17 +8431,17 @@ interpret(764, 7, 1).
 interpret(764, 8, 0).
 interpret(764, 9, 0).
 transition(764, 200).
-%interpret(765, 0, 1).
-%interpret(765, 1, 0).
-%interpret(765, 2, 0).
-%interpret(765, 3, 1).
-%interpret(765, 4, 0).
-%interpret(765, 5, 0).
-%interpret(765, 6, 1).
-%interpret(765, 7, 1).
-%interpret(765, 8, 0).
-%interpret(765, 9, 0).
-%transition(765, 201).
+interpret(765, 0, 1).
+interpret(765, 1, 0).
+interpret(765, 2, 0).
+interpret(765, 3, 1).
+interpret(765, 4, 0).
+interpret(765, 5, 0).
+interpret(765, 6, 1).
+interpret(765, 7, 1).
+interpret(765, 8, 0).
+interpret(765, 9, 0).
+transition(765, 201).
 interpret(766, 0, 0).
 interpret(766, 1, 0).
 interpret(766, 2, 0).
@@ -8631,17 +8629,17 @@ interpret(782, 7, 0).
 interpret(782, 8, 1).
 interpret(782, 9, 1).
 transition(782, 832).
-%interpret(783, 0, 1).
-%interpret(783, 1, 0).
-%interpret(783, 2, 0).
-%interpret(783, 3, 0).
-%interpret(783, 4, 0).
-%interpret(783, 5, 0).
-%interpret(783, 6, 1).
-%interpret(783, 7, 0).
-%interpret(783, 8, 1).
-%interpret(783, 9, 1).
-%transition(783, 833).
+interpret(783, 0, 1).
+interpret(783, 1, 0).
+interpret(783, 2, 0).
+interpret(783, 3, 0).
+interpret(783, 4, 0).
+interpret(783, 5, 0).
+interpret(783, 6, 1).
+interpret(783, 7, 0).
+interpret(783, 8, 1).
+interpret(783, 9, 1).
+transition(783, 833).
 interpret(784, 0, 0).
 interpret(784, 1, 0).
 interpret(784, 2, 0).
@@ -8763,17 +8761,17 @@ interpret(794, 7, 0).
 interpret(794, 8, 1).
 interpret(794, 9, 1).
 transition(794, 832).
-%interpret(795, 0, 1).
-%interpret(795, 1, 0).
-%interpret(795, 2, 0).
-%interpret(795, 3, 0).
-%interpret(795, 4, 0).
-%interpret(795, 5, 0).
-%interpret(795, 6, 1).
-%interpret(795, 7, 0).
-%interpret(795, 8, 1).
-%interpret(795, 9, 1).
-%transition(795, 833).
+interpret(795, 0, 1).
+interpret(795, 1, 0).
+interpret(795, 2, 0).
+interpret(795, 3, 0).
+interpret(795, 4, 0).
+interpret(795, 5, 0).
+interpret(795, 6, 1).
+interpret(795, 7, 0).
+interpret(795, 8, 1).
+interpret(795, 9, 1).
+transition(795, 833).
 interpret(796, 0, 0).
 interpret(796, 1, 0).
 interpret(796, 2, 0).
@@ -8884,17 +8882,17 @@ interpret(805, 7, 0).
 interpret(805, 8, 1).
 interpret(805, 9, 1).
 transition(805, 857).
-%interpret(806, 0, 0).
-%interpret(806, 1, 0).
-%interpret(806, 2, 0).
-%interpret(806, 3, 0).
-%interpret(806, 4, 0).
-%interpret(806, 5, 0).
-%interpret(806, 6, 1).
-%interpret(806, 7, 0).
-%interpret(806, 8, 1).
-%interpret(806, 9, 1).
-%transition(806, 832).
+interpret(806, 0, 0).
+interpret(806, 1, 0).
+interpret(806, 2, 0).
+interpret(806, 3, 0).
+interpret(806, 4, 0).
+interpret(806, 5, 0).
+interpret(806, 6, 1).
+interpret(806, 7, 0).
+interpret(806, 8, 1).
+interpret(806, 9, 1).
+transition(806, 832).
 interpret(807, 0, 1).
 interpret(807, 1, 0).
 interpret(807, 2, 0).
@@ -9016,17 +9014,17 @@ interpret(817, 7, 0).
 interpret(817, 8, 1).
 interpret(817, 9, 1).
 transition(817, 849).
-%interpret(818, 0, 0).
-%interpret(818, 1, 0).
-%interpret(818, 2, 0).
-%interpret(818, 3, 0).
-%interpret(818, 4, 0).
-%interpret(818, 5, 0).
-%interpret(818, 6, 1).
-%interpret(818, 7, 0).
-%interpret(818, 8, 1).
-%interpret(818, 9, 1).
-%transition(818, 832).
+interpret(818, 0, 0).
+interpret(818, 1, 0).
+interpret(818, 2, 0).
+interpret(818, 3, 0).
+interpret(818, 4, 0).
+interpret(818, 5, 0).
+interpret(818, 6, 1).
+interpret(818, 7, 0).
+interpret(818, 8, 1).
+interpret(818, 9, 1).
+transition(818, 832).
 interpret(819, 0, 1).
 interpret(819, 1, 0).
 interpret(819, 2, 0).
@@ -9192,17 +9190,17 @@ interpret(833, 7, 1).
 interpret(833, 8, 1).
 interpret(833, 9, 0).
 transition(833, 449).
-%interpret(834, 0, 0).
-%interpret(834, 1, 0).
-%interpret(834, 2, 0).
-%interpret(834, 3, 0).
-%interpret(834, 4, 0).
-%interpret(834, 5, 0).
-%interpret(834, 6, 1).
-%interpret(834, 7, 1).
-%interpret(834, 8, 1).
-%interpret(834, 9, 0).
-%transition(834, 448).
+interpret(834, 0, 0).
+interpret(834, 1, 0).
+interpret(834, 2, 0).
+interpret(834, 3, 0).
+interpret(834, 4, 0).
+interpret(834, 5, 0).
+interpret(834, 6, 1).
+interpret(834, 7, 1).
+interpret(834, 8, 1).
+interpret(834, 9, 0).
+transition(834, 448).
 interpret(835, 0, 1).
 interpret(835, 1, 0).
 interpret(835, 2, 0).
@@ -9236,17 +9234,17 @@ interpret(837, 7, 1).
 interpret(837, 8, 1).
 interpret(837, 9, 0).
 transition(837, 457).
-%interpret(838, 0, 0).
-%interpret(838, 1, 0).
-%interpret(838, 2, 0).
-%interpret(838, 3, 0).
-%interpret(838, 4, 0).
-%interpret(838, 5, 0).
-%interpret(838, 6, 1).
-%interpret(838, 7, 1).
-%interpret(838, 8, 1).
-%interpret(838, 9, 0).
-%transition(838, 448).
+interpret(838, 0, 0).
+interpret(838, 1, 0).
+interpret(838, 2, 0).
+interpret(838, 3, 0).
+interpret(838, 4, 0).
+interpret(838, 5, 0).
+interpret(838, 6, 1).
+interpret(838, 7, 1).
+interpret(838, 8, 1).
+interpret(838, 9, 0).
+transition(838, 448).
 interpret(839, 0, 1).
 interpret(839, 1, 0).
 interpret(839, 2, 0).
@@ -9346,17 +9344,17 @@ interpret(847, 7, 1).
 interpret(847, 8, 1).
 interpret(847, 9, 0).
 transition(847, 449).
-%interpret(848, 0, 0).
-%interpret(848, 1, 0).
-%interpret(848, 2, 0).
-%interpret(848, 3, 0).
-%interpret(848, 4, 0).
-%interpret(848, 5, 0).
-%interpret(848, 6, 1).
-%interpret(848, 7, 1).
-%interpret(848, 8, 1).
-%interpret(848, 9, 0).
-%transition(848, 448).
+interpret(848, 0, 0).
+interpret(848, 1, 0).
+interpret(848, 2, 0).
+interpret(848, 3, 0).
+interpret(848, 4, 0).
+interpret(848, 5, 0).
+interpret(848, 6, 1).
+interpret(848, 7, 1).
+interpret(848, 8, 1).
+interpret(848, 9, 0).
+transition(848, 448).
 interpret(849, 0, 1).
 interpret(849, 1, 0).
 interpret(849, 2, 0).
@@ -9643,17 +9641,17 @@ interpret(874, 7, 1).
 interpret(874, 8, 1).
 interpret(874, 9, 0).
 transition(874, 448).
-%interpret(875, 0, 1).
-%interpret(875, 1, 0).
-%interpret(875, 2, 0).
-%interpret(875, 3, 0).
-%interpret(875, 4, 0).
-%interpret(875, 5, 0).
-%interpret(875, 6, 1).
-%interpret(875, 7, 1).
-%interpret(875, 8, 1).
-%interpret(875, 9, 0).
-%transition(875, 449).
+interpret(875, 0, 1).
+interpret(875, 1, 0).
+interpret(875, 2, 0).
+interpret(875, 3, 0).
+interpret(875, 4, 0).
+interpret(875, 5, 0).
+interpret(875, 6, 1).
+interpret(875, 7, 1).
+interpret(875, 8, 1).
+interpret(875, 9, 0).
+transition(875, 449).
 interpret(876, 0, 0).
 interpret(876, 1, 0).
 interpret(876, 2, 0).
@@ -9951,17 +9949,17 @@ interpret(902, 7, 0).
 interpret(902, 8, 1).
 interpret(902, 9, 0).
 transition(902, 320).
-%interpret(903, 0, 1).
-%interpret(903, 1, 0).
-%interpret(903, 2, 0).
-%interpret(903, 3, 0).
-%interpret(903, 4, 0).
-%interpret(903, 5, 0).
-%interpret(903, 6, 1).
-%interpret(903, 7, 0).
-%interpret(903, 8, 1).
-%interpret(903, 9, 0).
-%transition(903, 321).
+interpret(903, 0, 1).
+interpret(903, 1, 0).
+interpret(903, 2, 0).
+interpret(903, 3, 0).
+interpret(903, 4, 0).
+interpret(903, 5, 0).
+interpret(903, 6, 1).
+interpret(903, 7, 0).
+interpret(903, 8, 1).
+interpret(903, 9, 0).
+transition(903, 321).
 interpret(904, 0, 0).
 interpret(904, 1, 0).
 interpret(904, 2, 0).
@@ -10127,17 +10125,17 @@ interpret(918, 7, 0).
 interpret(918, 8, 1).
 interpret(918, 9, 0).
 transition(918, 320).
-%interpret(919, 0, 1).
-%interpret(919, 1, 0).
-%interpret(919, 2, 0).
-%interpret(919, 3, 0).
-%interpret(919, 4, 0).
-%interpret(919, 5, 0).
-%interpret(919, 6, 1).
-%interpret(919, 7, 0).
-%interpret(919, 8, 1).
-%interpret(919, 9, 0).
-%transition(919, 321).
+interpret(919, 0, 1).
+interpret(919, 1, 0).
+interpret(919, 2, 0).
+interpret(919, 3, 0).
+interpret(919, 4, 0).
+interpret(919, 5, 0).
+interpret(919, 6, 1).
+interpret(919, 7, 0).
+interpret(919, 8, 1).
+interpret(919, 9, 0).
+transition(919, 321).
 interpret(920, 0, 0).
 interpret(920, 1, 0).
 interpret(920, 2, 0).
@@ -10424,17 +10422,17 @@ interpret(945, 7, 0).
 interpret(945, 8, 1).
 interpret(945, 9, 0).
 transition(945, 321).
-%interpret(946, 0, 0).
-%interpret(946, 1, 0).
-%interpret(946, 2, 0).
-%interpret(946, 3, 0).
-%interpret(946, 4, 0).
-%interpret(946, 5, 0).
-%interpret(946, 6, 1).
-%interpret(946, 7, 0).
-%interpret(946, 8, 1).
-%interpret(946, 9, 0).
-%transition(946, 320).
+interpret(946, 0, 0).
+interpret(946, 1, 0).
+interpret(946, 2, 0).
+interpret(946, 3, 0).
+interpret(946, 4, 0).
+interpret(946, 5, 0).
+interpret(946, 6, 1).
+interpret(946, 7, 0).
+interpret(946, 8, 1).
+interpret(946, 9, 0).
+transition(946, 320).
 interpret(947, 0, 1).
 interpret(947, 1, 0).
 interpret(947, 2, 0).
@@ -10556,17 +10554,17 @@ interpret(957, 7, 0).
 interpret(957, 8, 1).
 interpret(957, 9, 0).
 transition(957, 329).
-%interpret(958, 0, 0).
-%interpret(958, 1, 0).
-%interpret(958, 2, 0).
-%interpret(958, 3, 0).
-%interpret(958, 4, 0).
-%interpret(958, 5, 0).
-%interpret(958, 6, 1).
-%interpret(958, 7, 0).
-%interpret(958, 8, 1).
-%interpret(958, 9, 0).
-%transition(958, 320).
+interpret(958, 0, 0).
+interpret(958, 1, 0).
+interpret(958, 2, 0).
+interpret(958, 3, 0).
+interpret(958, 4, 0).
+interpret(958, 5, 0).
+interpret(958, 6, 1).
+interpret(958, 7, 0).
+interpret(958, 8, 1).
+interpret(958, 9, 0).
+transition(958, 320).
 interpret(959, 0, 1).
 interpret(959, 1, 0).
 interpret(959, 2, 0).
@@ -10600,17 +10598,17 @@ interpret(961, 7, 1).
 interpret(961, 8, 1).
 interpret(961, 9, 0).
 transition(961, 449).
-%interpret(962, 0, 0).
-%interpret(962, 1, 0).
-%interpret(962, 2, 0).
-%interpret(962, 3, 0).
-%interpret(962, 4, 0).
-%interpret(962, 5, 0).
-%interpret(962, 6, 1).
-%interpret(962, 7, 1).
-%interpret(962, 8, 1).
-%interpret(962, 9, 0).
-%transition(962, 448).
+interpret(962, 0, 0).
+interpret(962, 1, 0).
+interpret(962, 2, 0).
+interpret(962, 3, 0).
+interpret(962, 4, 0).
+interpret(962, 5, 0).
+interpret(962, 6, 1).
+interpret(962, 7, 1).
+interpret(962, 8, 1).
+interpret(962, 9, 0).
+transition(962, 448).
 interpret(963, 0, 1).
 interpret(963, 1, 0).
 interpret(963, 2, 0).
@@ -10677,17 +10675,17 @@ interpret(968, 7, 1).
 interpret(968, 8, 1).
 interpret(968, 9, 0).
 transition(968, 448).
-%interpret(969, 0, 1).
-%interpret(969, 1, 0).
-%interpret(969, 2, 0).
-%interpret(969, 3, 0).
-%interpret(969, 4, 0).
-%interpret(969, 5, 0).
-%interpret(969, 6, 1).
-%interpret(969, 7, 1).
-%interpret(969, 8, 1).
-%interpret(969, 9, 0).
-%transition(969, 449).
+interpret(969, 0, 1).
+interpret(969, 1, 0).
+interpret(969, 2, 0).
+interpret(969, 3, 0).
+interpret(969, 4, 0).
+interpret(969, 5, 0).
+interpret(969, 6, 1).
+interpret(969, 7, 1).
+interpret(969, 8, 1).
+interpret(969, 9, 0).
+transition(969, 449).
 interpret(970, 0, 0).
 interpret(970, 1, 0).
 interpret(970, 2, 0).
@@ -10908,17 +10906,17 @@ interpret(989, 7, 1).
 interpret(989, 8, 1).
 interpret(989, 9, 0).
 transition(989, 457).
-%interpret(990, 0, 0).
-%interpret(990, 1, 0).
-%interpret(990, 2, 0).
-%interpret(990, 3, 0).
-%interpret(990, 4, 0).
-%interpret(990, 5, 0).
-%interpret(990, 6, 1).
-%interpret(990, 7, 1).
-%interpret(990, 8, 1).
-%interpret(990, 9, 0).
-%transition(990, 448).
+interpret(990, 0, 0).
+interpret(990, 1, 0).
+interpret(990, 2, 0).
+interpret(990, 3, 0).
+interpret(990, 4, 0).
+interpret(990, 5, 0).
+interpret(990, 6, 1).
+interpret(990, 7, 1).
+interpret(990, 8, 1).
+interpret(990, 9, 0).
+transition(990, 448).
 interpret(991, 0, 1).
 interpret(991, 1, 0).
 interpret(991, 2, 0).
@@ -10963,17 +10961,17 @@ interpret(994, 7, 1).
 interpret(994, 8, 1).
 interpret(994, 9, 0).
 transition(994, 448).
-%interpret(995, 0, 1).
-%interpret(995, 1, 0).
-%interpret(995, 2, 0).
-%interpret(995, 3, 0).
-%interpret(995, 4, 0).
-%interpret(995, 5, 0).
-%interpret(995, 6, 1).
-%interpret(995, 7, 1).
-%interpret(995, 8, 1).
-%interpret(995, 9, 0).
-%transition(995, 449).
+interpret(995, 0, 1).
+interpret(995, 1, 0).
+interpret(995, 2, 0).
+interpret(995, 3, 0).
+interpret(995, 4, 0).
+interpret(995, 5, 0).
+interpret(995, 6, 1).
+interpret(995, 7, 1).
+interpret(995, 8, 1).
+interpret(995, 9, 0).
+transition(995, 449).
 interpret(996, 0, 0).
 interpret(996, 1, 0).
 interpret(996, 2, 0).
@@ -11029,17 +11027,17 @@ interpret(1000, 7, 1).
 interpret(1000, 8, 1).
 interpret(1000, 9, 0).
 transition(1000, 448).
-%interpret(1001, 0, 1).
-%interpret(1001, 1, 0).
-%interpret(1001, 2, 0).
-%interpret(1001, 3, 0).
-%interpret(1001, 4, 0).
-%interpret(1001, 5, 0).
-%interpret(1001, 6, 1).
-%interpret(1001, 7, 1).
-%interpret(1001, 8, 1).
-%interpret(1001, 9, 0).
-%transition(1001, 449).
+interpret(1001, 0, 1).
+interpret(1001, 1, 0).
+interpret(1001, 2, 0).
+interpret(1001, 3, 0).
+interpret(1001, 4, 0).
+interpret(1001, 5, 0).
+interpret(1001, 6, 1).
+interpret(1001, 7, 1).
+interpret(1001, 8, 1).
+interpret(1001, 9, 0).
+transition(1001, 449).
 interpret(1002, 0, 0).
 interpret(1002, 1, 0).
 interpret(1002, 2, 0).
@@ -11194,17 +11192,17 @@ interpret(1015, 7, 1).
 interpret(1015, 8, 1).
 interpret(1015, 9, 0).
 transition(1015, 449).
-%interpret(1016, 0, 0).
-%interpret(1016, 1, 0).
-%interpret(1016, 2, 0).
-%interpret(1016, 3, 0).
-%interpret(1016, 4, 0).
-%interpret(1016, 5, 0).
-%interpret(1016, 6, 1).
-%interpret(1016, 7, 1).
-%interpret(1016, 8, 1).
-%interpret(1016, 9, 0).
-%transition(1016, 448).
+interpret(1016, 0, 0).
+interpret(1016, 1, 0).
+interpret(1016, 2, 0).
+interpret(1016, 3, 0).
+interpret(1016, 4, 0).
+interpret(1016, 5, 0).
+interpret(1016, 6, 1).
+interpret(1016, 7, 1).
+interpret(1016, 8, 1).
+interpret(1016, 9, 0).
+transition(1016, 448).
 interpret(1017, 0, 1).
 interpret(1017, 1, 0).
 interpret(1017, 2, 0).

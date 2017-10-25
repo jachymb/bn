@@ -1,5 +1,3 @@
-#include "transitions/3.lp".
-
 nvars(3).
 maxdepth(5).
 maxterms(1).

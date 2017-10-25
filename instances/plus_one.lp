@@ -1,5 +1,5 @@
 % Learn big attractor over all states.
-nvars(3).
+nvars(4).
 maxterms(N) :- nvars(N).
 maxdepth((2**N)) :- nvars(N).
 nattractor_points(2**N) :- nvars(N).

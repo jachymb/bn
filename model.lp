@@ -35,53 +35,13 @@ interpret_term(I, X, T, 1) :- #count{Y : pos(X, Y, T), get_var(I, Y, 0)} = 0,
 interpret(I, X, 1) :- interpret_term(I, X, T, 1), term(X, T), state(I).
 interpret(I, X, 0) :- #count{K : interpret_term(I, X, K, 0)} = T, nterms(X, T), state(I).
 
-
-
 % transition/2 is a functional relation.
 #count{J : transition(I, J) : state(J)} = 1 :- state(I).
+%:- transition(I, J), transition(I, K), J != K.
 :- transition(I, J), interpret(I, X, B), get_var(J, X, 1-B).
 
 depth(X, 0)   :- state(X).
-depth(X, K+1) :- transition(Y, X), depth(Y, K), depth(K+1).
-:- not transition(_, Y), depth(Y, K), K > 0. % Should fire iff attractor assumptions are violated
-
-% Check that the maxdepth/1 assumption is not violated.
-:- transition(X, Y), depth(X, K), maxdepth(K), not is_attractor(X).
-:- transition(X, Y), depth(X, K), maxdepth(K), attractor_label(X, E), attractor_label(Y, F), not reachable(E, F).
-:- reachable(E, F), attractor_period(E, A), attractor_period(F, B), A != B.
-
-
-% DNF redundancy restrictions for speedup:
-% 1) Empty clause possible only if nothing else present
-:- #count{Y : pos(X, Y, T) ; Y : neg(X, Y, T) } = 0, variable(X), term(X, T), nterms(X, K), K > 1.
-
-% 2) Remove rendundancy by requiring that no term in a DNF subsumes another:
-literal_subsumes(X, T2, T1, Y) :- pos(X, Y, T1), pos(X, Y, T2), term(X, T1), term(X, T2).
-literal_subsumes(X, T2, T1, Y) :- neg(X, Y, T1), neg(X, Y, T2), term(X, T1), term(X, T2).
-literal_subsumes(X, T2, T1, Y) :- pos(X, Y, T1), not neg(X, Y, T2), not pos(X, Y, T2), term(X, T1), term(X, T2).
-literal_subsumes(X, T2, T1, Y) :- neg(X, Y, T1), not neg(X, Y, T2), not pos(X, Y, T2), term(X, T1), term(X, T2).
-literal_subsumes(X, T2, T1, Y) :- not pos(X,Y,T1), not neg(X, Y, T1), not neg(X, Y, T2), not pos(X, Y, T2), term(X, T1), term(X, T2), variable(Y).
-term_subsumes(X, T2, T1) :- #count{Y : literal_subsumes(X, T2, T1, Y)} = N, nvars(N), term(X, T1), term(X, T2).
-:- term_subsumes(X, T2, T1), T2 != T1, variable(X).
-
-% 3) Remove redundancy by lexicographically ordering terms in each DNF:
-term_gte(X, T1, T2, K) :- nvars(K), term(X, T1), term(X, T2).
-term_gte(X, T1, T2, Y) :- pos(X, Y, T1), pos(X, Y, T2), term(X, T1), term(X, T2), term_gte(X, T1, T2, Y+1).
-term_gte(X, T2, T1, Y) :- neg(X, Y, T1), pos(X, Y, T2), term(X, T1), term(X, T2), term_gte(X, T1, T2, Y+1).
-term_gte(X, T1, T2, Y) :- neg(X, Y, T1), neg(X, Y, T2), term(X, T1), term(X, T2), term_gte(X, T1, T2, Y+1).
-term_gte(X, T2, T1, Y) :- pos(X, Y, T1), not neg(X, Y, T2), not pos(X, Y, T2), term(X, T1), term(X, T2), term_gte(X, T1, T2, Y+1).
-term_gte(X, T2, T1, Y) :- neg(X, Y, T1), not neg(X, Y, T2), not pos(X, Y, T2), term(X, T1), term(X, T2), term_gte(X, T1, T2, Y+1).
-term_gte(X, T1, T2, Y) :- not pos(X,Y,T1), not neg(X, Y, T1), not neg(X, Y, T2), not pos(X, Y, T2), term(X, T1), term(X, T2), variable(Y), term_gte(X, T1, T2, Y+1).
-:- term_gte(X, T1, T2, 0), T1 < T2, variable(X).
-
-% 4) Disallow terms that are the same except for a complementary literal
-%resolvable(X, T1, T2, Y) :- pos(X, Y, T1), pos(X, Y, T2), term(X, T1), term(X, T2), resolvable(X, T1, T2, Y+1), variable(Y).
-%resolvable(X, T1, T2, Y) :- neg(X, Y, T1), neg(X, Y, T2), term(X, T1), term(X, T2), resolvable(X, T1, T2, Y+1), variable(Y).
-%resolvable(X, T1, T2, Y) :- not pos(X,Y,T1), not neg(X, Y, T1), not neg(X, Y, T2), not pos(X, Y, T2), resolvable(X, T1, T2, Y+1), variable(Y).
-%resolvable(X, T1, T2, Y) :- neg(X, Y, T1), pos(X, Y, T2), term_gte(X, T1, T2, Y+1), term_gte(X, T2, T1, Y+1), variable(Y).
-%resolvable(X, T1, T2, Y) :- pos(X, Y, T1), neg(X, Y, T2), term_gte(X, T1, T2, Y+1), term_gte(X, T2, T1, Y+1), variable(Y).
-%:- resolvable(X, T1, T2, 0).
-
+depth(X, K+1) :- state(X), {depth(Y, K) : transition(Y, X) } > 0, depth(K+1).
 
 % Attractor points sums
 attractor_label(0..A-1) :- nattractor_points(A).
@@ -95,7 +55,7 @@ attractor_label(0..A-1) :- nattractor_points(A).
 % attractor_label is a functional relation
 #count{N : attractor_label(X, N) : attractor_label(N)} = 1 :- is_attractor(X).
 % To avoid symmetrical models, force labeling to be canonically ordered:
-:- attractor_label(X, N), attractor_label(Y, M), X > Y, N <= M. 
+:- attractor_label(X, N), attractor_label(Y, M), X > Y, N <= M, not known_attractors.
 %:- attractor_label(X, _), not is_attractor(X).
 
 % Attractor is a state that is reachable in any given number of steps from some state.
@@ -113,11 +73,13 @@ attractor_period(E, K) :- #count{F : reachable(E, F)} = K, attractor_label(E), p
 #count{X : is_attractor(X) : state(X)} > 0.
 
 % Attractor state inter-reachability is an equivalence relation.
-reachable(E, F) :- transition(X, Y), attractor_label(X, E), attractor_label(Y, F).
-%reachable(E, F) :- reachable(F, E), attractor_label(E), attractor_label(F).
+reachable(E, E) :- attractor_label(E).
+reachable(E, F) :- reachable(F, E), attractor_label(E), attractor_label(F).
 reachable(E, F) :- reachable(E, G), reachable(G, F), attractor_label(E), attractor_label(F), attractor_label(G).
-%reachable(E, E) :- attractor_label(E).
-%:- not reachable(E, E), attractor_label(E).
+reachable(E, F) :- transition(X, Y), attractor_label(X, E), attractor_label(Y, F), X < Y, not known_attractors. % Ordering constraint reduces grounding while keeping equivalent
+
+#include "sanitychecks.lp".
+#include "redundancy.lp".
 
 #show pos/3.
 #show neg/3.
