@@ -31,4 +31,4 @@ interpret(7,2,1).
 
 {attractor_period(X, 1) : is_attractor(X)} = 1.
 {attractor_period(X, 2) : is_attractor(X)} = 2.
-{attractor_period(X, K) : is_attractor(X), depth(K)} = 3.
+

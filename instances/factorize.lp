@@ -4,6 +4,7 @@
 nvars(5).
 maxdepth(2*N) :- nvars(N).
 maxterms(2*N) :- nvars(N).
+-known_attractors.
 
 #script (python)
 def smallest_divisor(n):

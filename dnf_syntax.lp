@@ -2,7 +2,6 @@
 bool(0;1).
 variable(0..N-1) :- nvars(N).
 state(0..(2**N)-1) :- nvars(N).
-period(1..K+1) :- maxdepth(K). % Perhaps a bit faster unified? TODO
 term(1..T) :- maxterms(T).
 
 nterms(0).
@@ -41,4 +40,4 @@ interpret_term(I, X, T, 1) :- #count{Y : pos(X, Y, T), get_var(I, Y, 0)} = 0,
 #show neg/3.
 #show nterms/2.
 #show nvars/1.
-#show maxterms/1.
+%#show maxterms/1.
