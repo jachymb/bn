@@ -8,3 +8,5 @@ nvars(v).
 #maximize{ K : max_excentricity(K)}.
 
 #show max_excentricity/1.
+#show maxterms/1.
+#show nvars/1.
