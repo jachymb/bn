@@ -1,7 +1,6 @@
 % Domains:
 bool(0;1).
 variable(0..N-1) :- nvars(N).
-state(0..(2**N)-1) :- nvars(N).
 
 % Each literal is positive, negative or missing.
 % We don't consider the situation of both occuring.
@@ -11,7 +10,7 @@ state(0..(2**N)-1) :- nvars(N).
 get_var(I, X, 1) :- (2**X) & I = 2**X, variable(X), state(I).
 get_var(I, X, 0) :- (2**X) & I = 0,    variable(X), state(I).
 
-% interpret/3 and interpret_term/4 are functional relations.
+% interpret/3 is a functional relation.
 #count{B : interpret(I, X, B) : bool(B) } = 1 :- state(I), variable(X). 
 
 % Conjunction semantics:
