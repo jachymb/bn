@@ -20,16 +20,6 @@ interpret(I, X, B) :- observation(I, X, B).
 interpret(I, X, 0) :- apply_descriptor(I, D, 0), used(X, D).
 interpret(I, X, 1) :- #count{D : apply_descriptor(I, D, 0), used(X, D)} = 0, state(I), variable(X).
 
-%#include "reachable.lp".
-
-%transformed_observation(I, f, 0) :- state(I).
-%transformed_observation(I, or(L, X, R), 1) :- state(I), observation(I, X, L), descriptor(or(L, X, R)).
-%transformed_observation(I, or(L, X, R), 0) :- state(I), observation(I, X, 1-L), transformed_observation(I, R, 0), descriptor(or(L, X, R))
-
-{attractor_period(I, 1) : is_attractor(I)} = 1.
-{attractor_period(I, 2) : is_attractor(I)} = 2.
-:- attractor_period(I, K), K > 2.
-
 %satisfiable(t, X) :- variable(X).
 #show used/2.
 %#show D : feasible(D, 0).
