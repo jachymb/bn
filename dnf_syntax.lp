@@ -32,8 +32,12 @@ interpret_term(I, X, T, 1) :- #count{Y : pos(X, Y, T), get_var(I, Y, 0)} = 0,
 :- interpret_term(I, X, T, 1), pos(X, Y, T), get_var(I, Y, 0), term(X, T), state(I), variable(X).
 :- interpret_term(I, X, T, 1), neg(X, Y, T), get_var(I, Y, 1), term(X, T), state(I), variable(X).
 
+%:- -dependent(X, Y), pos(X, Y, _).
+%:- -dependent(X, Y), neg(X, Y, _).
+%:- dependent(X, Y), {pos(X, Y, _); neg(X, Y, _)} = 0.
+
 #show pos/3.
 #show neg/3.
 #show nterms/2.
-#show nvars/1.
-%#show maxterms/1.
+#show maxterms/1.
+%#show dependent/2.
