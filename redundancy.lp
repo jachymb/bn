@@ -22,11 +22,11 @@ term_gte(X, T1, T2, Y) :- not pos(X,Y,T1), not neg(X, Y, T1), not neg(X, Y, T2),
 :- term_gte(X, T1, T2, 0), T1 < T2, variable(X).
 
 % 4) Disallow terms that are the same except for a complementary literal
-%resolvable(X, T1, T2, Y) :- pos(X, Y, T1), pos(X, Y, T2), term(X, T1), term(X, T2), resolvable(X, T1, T2, Y+1), variable(Y).
-%resolvable(X, T1, T2, Y) :- neg(X, Y, T1), neg(X, Y, T2), term(X, T1), term(X, T2), resolvable(X, T1, T2, Y+1), variable(Y).
-%resolvable(X, T1, T2, Y) :- not pos(X,Y,T1), not neg(X, Y, T1), not neg(X, Y, T2), not pos(X, Y, T2), resolvable(X, T1, T2, Y+1), variable(Y).
-%resolvable(X, T1, T2, Y) :- neg(X, Y, T1), pos(X, Y, T2), term_gte(X, T1, T2, Y+1), term_gte(X, T2, T1, Y+1), variable(Y).
-%resolvable(X, T1, T2, Y) :- pos(X, Y, T1), neg(X, Y, T2), term_gte(X, T1, T2, Y+1), term_gte(X, T2, T1, Y+1), variable(Y).
-%:- resolvable(X, T1, T2, 0).
+resolvable(X, T1, T2, Y) :- pos(X, Y, T1), pos(X, Y, T2), term(X, T1), term(X, T2), resolvable(X, T1, T2, Y+1), variable(Y).
+resolvable(X, T1, T2, Y) :- neg(X, Y, T1), neg(X, Y, T2), term(X, T1), term(X, T2), resolvable(X, T1, T2, Y+1), variable(Y).
+resolvable(X, T1, T2, Y) :- not pos(X,Y,T1), not neg(X, Y, T1), not neg(X, Y, T2), not pos(X, Y, T2), resolvable(X, T1, T2, Y+1), variable(Y).
+resolvable(X, T1, T2, Y) :- neg(X, Y, T1), pos(X, Y, T2), term_gte(X, T1, T2, Y+1), term_gte(X, T2, T1, Y+1), variable(Y).
+resolvable(X, T1, T2, Y) :- pos(X, Y, T1), neg(X, Y, T2), term_gte(X, T1, T2, Y+1), term_gte(X, T2, T1, Y+1), variable(Y).
+:- resolvable(X, T1, T2, 0).
 
 

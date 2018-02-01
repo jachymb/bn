@@ -36,13 +36,13 @@ subsumes(and(L1, X1, R1), and(L2, X2, R2)) :- descriptor(and(L1, X1, R1)), descr
 
 :- used(X, D1), used(X, D2), subsumes(D1, D2), D1 != D2.
 
-#minimize{K@2, K : totalliterals(K)}.
+%#minimize{K@2, K : totalliterals(K)}.
 #minimize{1@1, D : used(X, D)}.
 
 
 #show used/2.
 #show nvars/1.
-#show nliterals/2.
+%#show nliterals/2.
 %#show totalliterals/1.
 %#show attractor_period/2.
 %#show D : feasible(D, 0).
