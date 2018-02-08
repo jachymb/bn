@@ -4,44 +4,54 @@ and converts to our knowledge.
 """
 
 def parse_dnf(lines, var, deps):
+    deps = [str(d) for d in deps]
     var = str(var)
-    for i, line in enumerate(lines):
+    for termNumber, line in enumerate(lines):
         if not line:
             break
         for j, char in enumerate(line.split()[0]):
             if char == '0':
-                yield "neg", (var, str(j), str(i+1))
-            elif char == '1':
-                yield "pos", (var, str(j), str(i+1))
-    yield "nterms", (var, str(i+1))
+                yield "neg", (var, deps[j], str(termNumber+1))
+            else:
+                yield ":- neg", (var, deps[j], str(termNumber+1))
+
+            if char == '1':
+                yield "pos", (var, deps[j], str(termNumber+1))
+            else:
+                yield ":- pos", (var, deps[j], str(termNumber+1))
+    yield "nterms", (var, str(termNumber))
+    return termNumber
 
 
 def parse_var(lines, var, nvars):
     on = False
     for line in lines:
         if line.startswith(".n"):
-            deps = line.split()[1:]
-            assert int(deps.pop(0)) == var + 1
-            assert int(deps.pop(0)) == len(deps)
+            deps = [int(x)-1 for x in line.split()[1:]]
+            assert deps.pop(0) == var
+            assert deps.pop(0) == len(deps) - 1
             var = str(var)
             for dep in deps:
-                yield "depends", (var, dep)
-            for ndep in map(str, range(nvars)):
-                if ndep not in deps:
-                    yield ":- depends", (var, ndep)
+                yield "depends", (var, str(dep))
+            #for ndep in range(nvars):
+            #    if ndep not in deps:
+            #        yield ":- depends", (var, str(ndep))
 
             break
 
-    yield from parse_dnf(lines, var, deps)
+    return (yield from parse_dnf(lines, var, deps))
 
 def parse(lines):
+    maxterms = 0
     for line in lines:
         if line.startswith(".v"):
             nvars = line.split()[1]
             yield "nvars", (nvars,)
 
             for i in range(int(nvars)):
-                yield from parse_var(lines, i, int(nvars))
+                nterms = yield from parse_var(lines, i, int(nvars))
+                maxterms = max(maxterms, nterms)
+    yield "maxterms", (str(maxterms,))
 
 def preprocess(lines):
     for line in lines:
@@ -54,3 +64,5 @@ if __name__ == "__main__":
     with open(sys.argv[1]) as f:
         for p, args in parse(preprocess(f)):
             print(f"{p}({', '.join(args)}).")
+
+    #print("observation(I, X, B) :- interpret(I, X, B).")

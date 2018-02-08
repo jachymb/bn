@@ -11,6 +11,26 @@ nattractor_points(1).
 :- attractor_period(I, K), state(I), K > 1.
 -known_attractors.
 
+dependent(0, 4). dependent(0, 8). dependent(0, 2). dependent(0, 3).
+dependent(1, 0). dependent(1, 4). dependent(1, 8). dependent(1, 3).
+dependent(2, 0). dependent(2, 1).
+dependent(3, 0). dependent(3, 3). dependent(3, 5). dependent(3, 1). dependent(3, 7). dependent(3, 6).
+dependent(4, 2). dependent(4, 3). dependent(4, 4). dependent(4, 8).
+dependent(5, 8).
+dependent(6, 5). dependent(6, 4). dependent(6, 3). dependent(6, 8).
+dependent(7, 7). dependent(7, 8). dependent(7, 6). dependent(7, 5). dependent(7, 3).
+dependent(8, 5). dependent(8, 6).
+-dependent(X, Y) :- not dependent(X, Y), variable(X), variable(Y).
+#show -dependent/2.
+#show dependent/2.
+
+correct_prediction(I) :- gt_transition(I, J), transition(I, J), state(I), state(J), not observation(I, _, _).
+precision(K) :- #count{I : correct_prediction(I)} = K.
+observed_transitions(K) :- #count{I : transition(I, _), not gt_transition(I, _)} = K.
+#show precision/1.
+#show observed_transitions/1.
+
+
 % Hints - can be commented:
 %nterms(0, 2). nterms(1, 2). nterms(2, 1). nterms(3, 4). nterms(4, 3). nterms(5, 1). nterms(6, 3). nterms(7, 4). nterms(8, 1).
 %:- #count{ 0, X,Y,T : pos(X,Y,T) } = P, #count{ 0, X,Y,T : neg(X,Y,T) } = N, P + N < 53.

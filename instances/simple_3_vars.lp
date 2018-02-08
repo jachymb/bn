@@ -30,6 +30,7 @@ observation(7,1,1).
 observation(7,2,1).
 
 
+-known_attractors.
 nattractor_points(3).
 {attractor_period(X, 1) : is_attractor(X)} = 1.
 {attractor_period(X, 2) : is_attractor(X)} = 2.

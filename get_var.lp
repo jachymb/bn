@@ -6,4 +6,4 @@ state(0..(2**N)-1) :- nvars(N).
 get_var(I, X, 1) :- (2**X) & I = 2**X, variable(X), state(I).
 get_var(I, X, 0) :- (2**X) & I = 0,    variable(X), state(I).
 
-#show nvars/1.
+%#show nvars/1.
